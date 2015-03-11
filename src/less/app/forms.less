@@ -1,0 +1,74 @@
+
+.form-control.no-extras {
+  outline: none;
+  border: none!important;
+  -webkit-box-shadow: none!important;
+  -moz-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
+
+
+.radio {
+  label {
+    padding-top: 2px;
+    text-indent: 10px;
+    input[type=radio] {
+      display:none;
+    }
+    input[type=radio] + span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 21px;
+      background: url(../images/shared/radio_unchecked.png) 0 0 no-repeat;
+    }
+    input[type=radio]:checked + span {
+      background: url(../images/shared/radio_checked.png) 0 0 no-repeat;
+    }
+  }
+}
+
+.checkbox {
+  label {
+    padding-top: 2px;
+    text-indent: 10px;
+    input[type=checkbox] {
+      display:none;
+    }
+    input[type=checkbox] + span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 21px;
+      background: url(../images/shared/checkbox_unchecked.png) 0 2px no-repeat;
+    }
+    input[type=checkbox]:checked + span {
+      background: url(../images/shared/checkbox_checked.png) 0 2px no-repeat;
+    }
+  }
+}
+
+select {
+  // defaults
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  text-transform: uppercase;
+  // styling
+  text-transform: none;
+  color: #000;
+  .box-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+  border-radius: 2px;
+  width: 100%;
+  text-align: left;
+  border-color: transparent;
+  background: #fafafa url(../images/shared/select_caret_green.png) right 11px no-repeat;
+  padding: 5px 5px 5px 5px;
+  border-right: 20px solid transparent;
+  text-indent: 10px;
+}
+

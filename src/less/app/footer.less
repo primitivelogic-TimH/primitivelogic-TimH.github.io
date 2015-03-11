@@ -1,0 +1,140 @@
+
+#footer {
+  background: #e7e7e7 url(../images/shared/footer_bg.png) center 0 no-repeat;
+  padding-top: 160px;
+  padding-bottom: 20px;
+  .tractor {
+    position: absolute;
+    left: 330px;
+    top: 12px;
+    z-index: 99;
+  }
+  .call-before-you-dig {
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    z-index: 101;
+  }
+  .man-with-shovel {
+    position: absolute;
+    left: 500px;
+    top: 60px;
+    z-index: 99;
+  }
+  .pair-of-workers {
+    position: absolute;
+    left: 280px;
+    top: 60px;
+    z-index: 99;
+  }
+  h4 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: none;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-family: 'ProximaNova-Semibold';
+  }
+  h4.footer-logo-container {
+    margin-top: 0;
+  }
+  hr {
+      border-top: 1px solid #a59694;
+    }
+  .footer-content {
+    font-family: 'ProximaNova-Light';
+    .footer-contact, .footer-suspect-gas-leak {
+      color: #a59694;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+    .footer-social {
+      position: relative;
+      li {
+        position: relative;
+        width: auto;
+        float: left;
+        margin-right: 10px;
+      }
+    }
+    ul {
+      padding-left: 0;
+      list-style: none;
+      li {
+        margin-bottom: 10px;
+        a, a:hover, a:focus {
+          color: #fff;
+        }
+      }
+    }
+  }
+  ul.final-contact-links {
+    list-style: none;
+    padding-left: 0;
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+    li {
+      position: relative;
+      width: auto;
+      float: left;
+      margin-right: 10px;
+      color: #a59694;
+      a, a:hover {
+        color: #a59694;
+      }
+    }
+  }
+  .footer-copyright {
+    padding-top: 15px;
+    p {
+      color: #a59694;
+    }
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  #footer {
+    background-position: -200px 0;
+    padding-top: 160px;
+    padding-bottom: 30px;
+    .footer-mobile-logo {
+      img {
+        max-width: 130px;
+      }
+    }
+    .footer-mobile-copyright {
+      padding-top: 20px;
+    }
+    .tractor {
+      left: 130px;
+    }
+    .call-before-you-dig {
+      left: 15px;
+    }
+    .man-with-shovel {
+      left: 300px;
+    }
+    .pair-of-workers {
+      left: 80px;
+    }
+  }
+}
+
+@media (min-width: @screen-sm-max) and (max-width: 1499px) {
+  #footer {
+    .tractor {
+      left: 260px;
+    }
+    .call-before-you-dig {
+      left: 180px;
+    }
+    .man-with-shovel {
+      left: 430px;
+    }
+    .pair-of-workers {
+      left: 180px;
+    }
+  }
+}

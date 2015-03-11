@@ -1,0 +1,134 @@
+
+.carousel-with-content {
+  position: relative;
+  height: 834px;
+  h1 {
+    color: #fff;
+    text-shadow: 1px 1px 3px #666;
+  }
+  h1.h1-line-1 {
+    font-size: 48px;
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-family: 'FFGoodHeadlineWebProCondBlack';
+    letter-spacing: 1px;
+  }
+  h1.h1-line-2 {
+    margin-bottom: 40px;
+    font-family: 'Adelle-Italic';
+    font-size: 72px;
+  }
+  .carousel-inner {
+    height: 834px;
+  }
+  .carousel-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .carousel-content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+  }
+}
+
+.carousel-overlay-ctas {
+  bottom: 40px;
+}
+
+.carousel-overlay, .carousel-overlay-ctas, .carousel-overlay-ctas {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  z-index: 99;
+}
+
+.carousel-overlay, .carousel-overlay {
+  top: 0;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.container-carousel-custom {
+  max-width: 1300px;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+  .carousel-control {
+    background: none;
+    box-shadow: none;
+    z-index: 99999;
+    opacity: 1;
+  }
+  .carousel-inner {
+    margin-bottom: 50px;
+  }
+  .carousel-control.left {
+    img {
+      margin-right: 20px;
+    }
+  }
+  .carousel-control.right {
+    img {
+      margin-left: 20px;
+    }
+  }
+  ol.carousel-indicators {
+    display: inline;
+    li {
+      margin-right: 5px;
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+      border: none;
+      box-shadow: inset 1px 4px 9px -6px;
+    }
+    li.active {
+      background-color: #2fc8aa;
+    }
+  }
+  padding-bottom: 50px;
+}
+
+@media (max-width: @screen-sm-max) {
+  .carousel-control {
+    display: none;
+  }
+  .carousel-with-content {
+    height: inherit;
+    min-height: 222px;
+    .carousel-inner {
+      height: inherit;
+      min-height: 222px;
+    }
+    .carousel-image-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .carousel-content-container {
+      display: none;
+    }
+  }
+  .carousel-with-content.carousel-no-images {
+    height: inherit;
+    min-height: auto;
+    .carousel-content-container {
+      display: inherit;
+    }
+    .carousel-inner, .carousel-inner div {
+      height: inherit;
+      min-height: auto;
+    }
+  }
+}

@@ -1,0 +1,189 @@
+
+<p class='text-center' ng-hide='dataLoaded'>
+  <i class='fa fa-spinner fa-spin'></i>
+</p>
+
+<div class='gray-bg padded-module' ng-controller='FormsController'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+        <h2 class='page-header ar'>Contact Southwest Gas</h2>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div ng-if='saveError' ng-class='has-error'>{{ saveError }}</div>
+          <form name='defaultForm' class='form-horizontal' method='post' role='form' novalidate ng-submit='submit()'>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.firstname.$invalid && (defaultForm.firstname.$touched || defaultForm.firstname.$dirty) }">
+              <label for='' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>First Name</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <input ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" ng-model='firstname' ng-minlength='3' name='firstname' type='text' class='form-control' placeholder='' required />
+                <span ng-show='defaultForm.firstname.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.firstname.$invalid && (defaultForm.firstname.$touched || $dirty) }">Invalid First Name</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.lastname.$invalid && (lastname.$touched || defaultForm.lastname.$dirty) }">
+              <label for=' ' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>First Name</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <input ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" ng-model='lastname' ng-minlength='3' name='lastname' type='text' class='form-control' placeholder='' required />
+                <span ng-show='defaultForm.lastname.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.lastname.$invalid && (defaultForm.lastname.$touched || $dirty) }">Invalid :ast Name</span>
+              </div>
+            </div>  
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.address.$invalid && (defaultForm.address.$touched || defaultForm.address.$dirty) }">
+              <label for=' ' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>Address</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <textarea ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" ng-model='address' ng-minlength='3' name='address' type='text' class='form-control' placeholder='' required></textarea>
+                <span ng-show='defaultForm.address.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.address.$invalid && (defaultForm.address.$touched || $dirty) }">Invalid Address</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.city.$invalid && (defaultForm.city.$touched || defaultForm.city.$dirty) }">
+              <label for='city' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>City</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <textarea ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" ng-model='city' ng-minlength='3' name='city' type='text' class='form-control' placeholder='' required></textarea>
+                <span ng-show='defaultForm.citu.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.city.$invalid && (defaultForm.city.$touched || $dirty) }">Invalid City</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.state.$invalid && (defaultForm.state.$touched || defaultForm.state.$dirty) }">
+              <label for='state' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>State</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <select ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" name='state' ng-model='state' name='state' type='text' class='form-control' placeholder='' required>
+                  <option value=''>Select a State:</option>
+                  <option value='AL'>Alabama</option>
+                  <option value='AK'>Alaska</option>
+                  <option value='AZ'>Arizona</option>
+                  <option value='AR'>Arkansas</option>
+                  <option value='CA'>California</option>
+                  <option value='CO'>Colorado</option>
+                  <option value='CT'>Connecticut</option>
+                  <option value='DE'>Delaware</option>
+                  <option value='DC'>District of Columbia</option>
+                  <option value='FL'>Florida</option>
+                  <option value='GA'>Georgia</option>
+                  <option value='HI'>Hawaii</option>
+                  <option value='ID'>Idaho</option>
+                  <option value='IL'>Illinois</option>
+                  <option value='IN'>Indiana</option>
+                  <option value='IA'>Iowa</option>
+                  <option value='KS'>Kansas</option>
+                  <option value='KY'>Kentucky</option>
+                  <option value='LA'>Louisiana</option>
+                  <option value='ME'>Maine</option>
+                  <option value='MD'>Maryland</option>
+                  <option value='MA'>Massachusetts</option>
+                  <option value='MI'>Michigan</option>
+                  <option value='MN'>Minnesota</option>
+                  <option value='MS'>Mississippi</option>
+                  <option value='MO'>Missouri</option>
+                  <option value='MT'>Montana</option>
+                  <option value='NE'>Nebraska</option>
+                  <option value='NV'>Nevada</option>
+                  <option value='NH'>New Hampshire</option>
+                  <option value='NJ'>New Jersey</option>
+                  <option value='NM'>New Mexico</option>
+                  <option value='NY'>New York</option>
+                  <option value='NC'>North Carolina</option>
+                  <option value='ND'>North Dakota</option>
+                  <option value='OH'>Ohio</option>
+                  <option value='OK'>Oklahoma</option>
+                  <option value='OR'>Oregon</option>
+                  <option value='PA'>Pennsylvania</option>
+                  <option value='RI'>Rhode Island</option>
+                  <option value='SC'>South Carolina</option>
+                  <option value='SD'>South Dakota</option>
+                  <option value='TN'>Tennessee</option>
+                  <option value='TX'>Texas</option>
+                  <option value='UT'>Utah</option>
+                  <option value='VT'>Vermont</option>
+                  <option value='VA'>Virginia</option>
+                  <option value='WA'>Washington</option>
+                  <option value='WV'>West Virginia</option>
+                  <option value='WI'>Wisconsin</option>
+                  <option value='WY'>Wyoming</option>
+                </select>
+                <span ng-show='defaultForm.state.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.state.$invalid && (defaultForm.state.$touched || $dirty) }">Invalid State</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.zipcode.$invalid && (defaultForm.zipcode.$touched || defaultForm.zipcode.$dirty) }">
+              <label for=' ' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>Zip</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <input ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" ng-model='zipcode' ng-minlength='3' name='zipcode' type='text' class='form-control' placeholder='' required />
+                <span ng-show='defaultForm.zipcode.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.zipcode.$invalid && (defaultForm.zipcode.$touched || $dirty) }">Invalid Zip Code</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.phonenum.$invalid && (defaultForm.phonenum.$touched || defaultForm.phonenum.$dirty) }">
+              <label for=' ' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>Phone</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <input ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" ng-model='phonenum' ng-minlength='3' name='phonenum' type='phone' class='form-control' placeholder='' required />
+                <span ng-show='defaultForm.phonenum.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.phonenum.$invalid && (defaultForm.phonenum.$touched || $dirty) }">Invalid Phone Number</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.email.$invalid && (defaultForm.email.$touched || defaultForm.email.$dirty) }">
+              <label for=' ' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>Email</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <input ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" ng-model='email' ng-minlength='3' name='email' type='email' class='form-control' placeholder='' required />
+                <span ng-show='defaultForm.phonenum.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.email.$invalid && (defaultForm.email.$touched || $dirty) }">Invalid Email</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.subject.$invalid && (defaultForm.subject.$touched || defaultForm.state.$dirty) }">
+              <label for=' ' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>Subject</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <select ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" name='subject' ng-moodel='subject' name='subject' type='text' class='form-control' required />
+                  <option value=''>Select a Subject:</option>
+                  <option value='Safety'>Safety **</option>
+                  <option value='MyAccount'>MyAccount **</option>
+                  <option value='Billing Questions'>Billing Questions **</option>
+                  <option value='Customer Service'>Customer Service **</optonn>
+                  <option value='Rate Information'>Rate Information **</option>
+                  <option value='Southwest Gas Website'>Southwest Gas Website</option>
+                  <option value='Employment Opportunities'>Employment Opportunities</option>
+                </select>
+                <span class='help-block' ng-class="{ 'text-danger' : defaultForm.subject.$invalid && (defaultForm.subject.$touched || $dirty) }" ng-show='defaultForm.subject.$touched || defaultForm.subject.$dirty'>Invalid Subject</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.division.$invalid && (defaultForm.division.$touched || defaultForm.division.$dirty) }">
+              <label for=' ' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>Division</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <select ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" name='division' ng-model='division' name='division' type='text' class='form-control' required />
+                  <option value=''>Select a Division:</option>
+                  <option value='Safety'>Safety **</option>
+                  <option value='MyAccount'>MyAccount **</option>
+                  <option value='Billing Questions'>Billing Questions **</option>
+                  <option value='Customer Service'>Customer Service **</option>
+                  <option value='Rate Information'>Rate Information **</option>
+                  <option value='Southwest Gas Website'>Southwest Gas Website</option>
+                  <option value='Employment Opportunities'>Employment Opportunities</option>
+                </select>
+                <span ng-show='defaultForm.division.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.division.$invalid && (defaultForm.division.$touched || $dirty) }">Invalid Division</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.account.$invalid && (defaultForm.account.$touched || defaultForm.account.$dirty) }">
+              <label for=' ' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>Account Number</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <input ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" ng-model='account' ng-minlength='3' name='account' type='phone' class='form-control' placeholder='' required />
+                <span ng-show='defaultForm.account.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.account.$invalid && (defaultForm.account.$touched || $dirty) }">Invalid Account Number</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.ssn.$invalid && (defaultForm.ssn.$touched || defaultForm.ssn.$dirty) }">
+              <label for=' ' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>Last 4 Digits of SSN</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <input ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" ng-model='ssn' ng-minlength='4' name='ssn' type='phone' class='form-control' placeholder='' required />
+                <span ng-show='defaultForm.ssn.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.ssn.$invalid && (defaultForm.ssn.$touched || $dirty) }">Invalid SSN Number</span>
+              </div>
+            </div>
+            <div class='form-group' ng-class="{ 'has-error' : defaultForm.comments.$invalid && (defaultForm.comments.$touched || defaultForm.comments.$dirty) }">
+              <label for=' ' class='col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label'>Address</span></label>
+              <div class='col-xs-6 col-xs-6 col-md-6 col-lg-6'>
+                <textarea ng-model-options="{ updateOn: 'default blur', debounce: {'default': 1000, 'blur': 0} }" ng-model='comments' ng-minlength='3' name='address' type='text' class='form-control' placeholder='' required></textarea>
+                <span ng-show='defaultForm.comments.$error.minlength' class='help-block' ng-class="{ 'text-danger' : defaultForm.comments.$invalid && (defaultForm.comments.$touched || $dirty) }">Invalid Comments</span>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-xs-6 col-sm-6 col-md-6 col-lg-6'></div>
+              <div class='col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right'>
+                <button type='submit' class='btn btn-default btn-primary' ng-disabled='defaultForm.$invalid'>Submit</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>

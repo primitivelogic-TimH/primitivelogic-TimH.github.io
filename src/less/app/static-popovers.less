@@ -1,0 +1,58 @@
+
+.static-popover-style-bg {
+  position: relative;
+  height: 60px;
+  .static-popover-style-bg-top {
+    background: #ff7044;
+    padding: 10px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    h2 {
+      color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-family: 'FFGoodHeadlineWebProCondBlack';
+      margin-top: 10px;
+      display: inline-block;
+      font-weight: normal;
+      letter-spacing: 1px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .static-popover-style-bg-bottom {
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    i {
+      .rotate(90deg);
+      color: #ff7044;
+      font-size: 70px;
+      left: -10px;
+      top: -10px;
+    }
+  }
+}
+
+.static-popover-stretch {
+  .static-popover-style-bg-top {
+    width: 100%;
+  }
+}
+
+.static-popover-large {
+  .static-popover-style-bg-top {
+    height: 50px;
+    h2 {
+      padding-top: 6px;
+    }
+  }
+  .static-popover-style-bg-bottom {
+    top: 10px;
+  }
+}

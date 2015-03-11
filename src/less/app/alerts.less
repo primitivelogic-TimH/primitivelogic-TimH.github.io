@@ -1,0 +1,35 @@
+
+#alerts .alert {
+  position: fixed;
+  z-index: 99;
+  border: none;
+  top: -51px;
+  .transition(all 0.25s ease-in-out);
+}
+
+#alerts.open .alert {
+  top: 0;
+}
+
+#alerts .alert.alert-warning {
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #ff7044;
+  span.ng-binding {
+    background: url(../images/shared/alert_icon_warning.png) 0 0 no-repeat;
+    text-indent: 50px;
+    height: 24px;
+    background-clip: inherit;
+    padding: 5px 5px 5px 35px;
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  a.close {
+    text-decoration: none;
+  }
+}

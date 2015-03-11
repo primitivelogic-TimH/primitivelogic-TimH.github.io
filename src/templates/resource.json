@@ -1,0 +1,15 @@
+{
+  "default": {
+    "header": [
+      "<%= webprefix + prefix %>css/build.min.css"
+    ],
+    "footer": [
+      "<%= webprefix + prefix %>js/build.min.js"
+    ]
+  },
+  "<%= webprefix %>a-non-existent-page": {
+    "header": [
+      "<%= webprefix + prefix %>css/build-sample.css"
+    ]
+  }
+}
