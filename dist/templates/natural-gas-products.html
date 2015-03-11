@@ -1,0 +1,621 @@
+
+<div class='hero-container hero-small'>
+  <div class='hero-image-container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <img src='images/contractor-referrals/hero.png' alt='' class='hero-image'>
+      </div>
+    </div>
+  </div>
+  <div class='hero-overlay'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+          <h1 class='ar white-text'>              
+            Heating
+          </h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+          <div class='white-text'>
+            <div>Comfy and warm - we help you love the way you live</div>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+          <div class='white-text'>
+            <div>Comfy and warm - we help you love the way you live</div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>
+
+<div class='gray-bg sticky-menu' ng-controller='StickyNavController'>
+  <div class='container hidden-xs'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <header class='navbar navbar-default navbar-default-override' role='banner'>
+          <nav role='navigation'>
+            <ul class='nav navbar-nav pull-left'>
+              <li class='brand'>
+                <h4 class='pnsb'>Residential</h4>
+              </li>
+            </ul>
+            <ul class='nav navbar-nav pull-right'>
+              <li class='dropdown' dropdown>
+                <a ng-href='' class='dropdown-toggle' title='My Account' dropdown-toggle>
+                  My Account <i class='glyphicon glyphicon-chevron-down'></i>
+                </a>
+                <ul class='dropdown-menu' role='menu'>
+                  <li><a ng-href='' title='Action'>Action</a></li>
+                </ul>
+              </li>
+              <li class='nav-border-right'></li>
+              <li class='dropdown' dropdown>
+                <a ng-href='' class='dropdown-toggle' title='Natural Gas Products' dropdown-toggle>
+                  Natural Gas Products <i class='glyphicon glyphicon-chevron-down'></i>
+                </a>
+                <ul class='dropdown-menu' role='menu'>
+                  <li><a href='' title=''>Action</a></li>
+                  <li><a href='' title=''>Another action</a></li>
+                </ul>
+              </li>
+              <li class='nav-border-right'></li>
+              <li>
+                <a ng-href='' class='dropdown-toggle' title='Save Money &amp; Energy'>
+                  Save Money &amp; Energy
+                </a>
+              </li>
+              <li class='nav-border-right'></li>
+              <li>
+                <a ng-href='' class='dropdown-toggle' title='Special Programs &amp; Assistance'>
+                  Special Programs &amp; Assistance
+                </a>
+              </li>
+              <li class='nav-border-right'></li>
+              <li>
+                <a ng-href='' class='dropdown-toggle' title='Resources'>
+                  Resources
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+  </div>
+  <div class='container hidden-lg hidden-md hidden-sm'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <select name='sticky_select' id='sticky_select' ng-model='sticky_select' ng-change='goTo(sticky_select)' ng-init='sticky_select = sticky_select[0]'>
+          <option value='_default_'>Navigation</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='gray-bg padded-module'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-20'>
+        <div static-popover='Natural Gas Products'></div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 white-bg half-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='small-header uppercase orange-text'>Heating</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/natural-gas-products/fpo_heater.png' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              The value of a gas heater is in the numbers. Costing less than other 
+              major energy sources, natural gas is the smart solution for your heating budget.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              <a ng-href='' title='More Info' class='green-text pnsb'>
+                More Info
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 white-bg half-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='small-header uppercase orange-text'>Water Heater</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/natural-gas-products/fpo_water_heater.png' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Water heating is the third largest energy expense you have. 
+              Heating with natural gas is the cost-conscious decision, as it will save you money in the long-run.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              <a ng-href='' title='More Info' class='green-text pnsb'>
+                More Info
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 white-bg half-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='small-header uppercase orange-text'>Cooking</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/natural-gas-products/fpo_cooking.png' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Be the chef in your kitchen with natural gas ranges and ovens. With versatile 
+              colors, sizes and features, the only limit in your kitchen will be counter space.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              <a ng-href='' title='Discover cooking options' class='green-text pnsb'>
+                Discover cooking options
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 white-bg half-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='small-header uppercase orange-text'>Gas Dryer</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/natural-gas-products/fpo_gas_dryer.png' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Natural gas doubles up your drying power in the laundry room. Dry twice as 
+              many loads for the same cost as you would with electric. That’s a fact to 
+              tumble over!.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              <a ng-href='' title='More Info' class='green-text pnsb'>
+                More Info
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 white-bg half-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='small-header uppercase orange-text'>Outdoor Appliances</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/natural-gas-products/fpo_outdoor_appliances.png' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Extend your home’s comfort outdoors. Natural gas makes outdoor living a 
+              dream with inviting and stylish options.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              <a ng-href='' title='More Info' class='green-text pnsb'>
+                More Info
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 white-bg half-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='small-header uppercase orange-text'>NATURAL GAS FIREPLACES</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/natural-gas-products/fpo_fireplaces.png' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>    
+              Discover the timeless charm of a fireplace experience, but without all the mess. 
+              Natural gas fireplaces are cleaner and safer than traditional wood burning models.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              <a ng-href='' title='More Info' class='green-text pnsb'>
+                More Info
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 white-bg half-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='small-header uppercase orange-text'>SOLAR WATER HEATING</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/natural-gas-products/fpo_solar.png' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Lorem ipsum dolor sit amet, conse ur adipiscing elit. Aenean euismod 
+              bibendum laoreet. Proin gravida dolor sit amet lacus In Espñol.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              <a ng-href='' title='More Info' class='green-text pnsb'>
+                More Info
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 white-bg half-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='small-header uppercase orange-text'>NATURAL GAS VEHICLES</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/natural-gas-products/fpo_vehicles.png' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>     
+              Lorem ipsum dolor sit amet, conse ur adipiscing elit. Aenean euismod bibendum 
+              laoreet. Proin gravida dolor sit amet lacus In Espñol.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              <a ng-href='' title='More Info' class='green-text pnsb'>
+                More Info
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='white-bg padded-module'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div static-popover='Why Natural Gas?'></div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h1 class='ar'>Abundant and clean. It’s the natural choice.</h1>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              As the cleanest fossil fuel, natural gas is an extraordinarily efficient 
+              energy source that can help consumers save money on utility bills. 
+              Because natural gas is so versatile, it can be used in a variety of 
+              ways throughout the home or business. Everything from cooking, to 
+              heating to generating light, can be done with natural gas. 
+              Just as natural gas is the clear front-runner for energy, it’s 
+              also the most economical. On average this abundant and reliable 
+              resource provides savings double that of other energy sources. 
+            </p>
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Adopting natural gas products into your daily lifestyle means you’re making a 
+              dependable choice, one that will make your time and efforts more convenient 
+              overall. As if this wasn’t enough, this safe solution boasts one of the most 
+              long-standing and environmentally-responsible delivery systems in the nation, 
+              with less than 2% reported greenhouse gas emission.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='small-header orange-text uppercase'>Benefits of Natural Gas</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='row xsmall-padded-module'>
+              <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
+                <p class='centered'>
+                  <img src='images/natural-gas-products/home_circle_green.png' alt='Smell' />
+                </p>
+              </div>
+              <div class='col-lg-9 col-md-9 col-sm-9 col-xs-9'>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <h2 class='small-header uppercase black-text no-margin'>It's Comfortable</h2>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <p class='spaced'>
+                      Natural gas furnaces deliver warm air without draftiness 
+                      associated with an electric heat pump.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='row xsmall-padded-module'>
+              <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
+                <p class='centered'>
+                  <img src='images/natural-gas-products/thumbs_circle_orange.png' alt='' />
+                </p>
+              </div>
+              <div class='col-lg-9 col-md-9 col-sm-9 col-xs-9'>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <h2 class='small-header uppercase black-text no-margin'>IT’s DEPENDABLE</h2>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <p class='spaced'>
+                      Regardless of whether the sun is shining or the wind is blowing, 
+                      natural gas is always there for you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='row xsmall-padded-module'>
+              <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
+                <p class='centered'>
+                  <img src='images/natural-gas-products/smell_yellow_circle.png' alt='' />
+                </p>
+              </div>
+              <div class='col-lg-9 col-md-9 col-sm-9 col-xs-9'>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <h2 class='small-header uppercase black-text no-margin'>IT’s CONVENIENT</h2>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <p class='spaced'>
+                      An endless supply of hot water, precise control for cooking, 
+                      and faster drying time for your laundry.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='row xsmall-padded-module'>
+              <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
+                <p class='centered'>
+                  <img src='images/natural-gas-products/pig_maroon_circle.png' alt='' />
+                </p>
+              </div>
+              <div class='col-lg-9 col-md-9 col-sm-9 col-xs-9'>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <h2 class='small-header uppercase black-text no-margin'>IT’s ECONOMICAL</h2>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <p class='spaced'>
+                      Looking to save on your energy bills? Look no further. 
+                      Natural gas provides the best energy value costing less 
+                      than electricity, propane and heating oil.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='gray-bg padded-module'>
+  <div class='container'>
+    <div class='row padded-module'>
+      <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12 white-bg bg-shadowed third-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='orange-text uppercase small-header'>Get Special Offers</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/residential/tmp_istock.png' alt='Special Assistance Programs'>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Special offers exist for new and current Southwest Gas customers. 
+              Explore current rebates and offers in your area.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 third-boxes-links'>
+            <p class='spaced'>
+              <a ng-href='' title='See rebates and offers' class='green-text pnsb'>
+                See rebates and offers
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12 white-bg bg-shadowed third-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='orange-text uppercase small-header'>Energy Saving Tips</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/residential/tmp_istock.png' alt='Special Assistance Programs'>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Live more energy-efficient, and save more money on your monthly bill, 
+              with just a few simple lifestyle changes.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              <a ng-href='' title='DIY Energy Savings' class='green-text pnsb'>
+                DIY Energy Savings
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12 white-bg bg-shadowed third-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='orange-text uppercase small-header'>Connect to Natural Gas</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/residential/tmp_istock.png' alt='Special Assistance Programs'>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              A simple switch to natural gas can save you money on your utility bill. 
+              Contact us to learn how you can save money when you choose the 
+              clean efficiency of natural gas.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              <a ng-href='' title='Make the Switch' class='green-text pnsb'>
+                Make the Switch
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-medium'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

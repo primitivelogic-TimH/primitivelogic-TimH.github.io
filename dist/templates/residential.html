@@ -1,0 +1,445 @@
+
+<div id='residential-hero'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <h1 class='white-text ar'>Residential Services</h1>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <p class='white-text'>
+          Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit, sed do 
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <h4>
+          <a ng-href='' title='Start, stop or move services' class='green-text'>
+            Start, stop or move services
+            <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-medium'></i>
+          </a>
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='residential-menu' class='gray-bg sticky-menu' ng-controller='StickyNavController'>
+  <div class='container hidden-xs'>
+    <div class='row'>
+      <div class='col-lg-12 col-lg-md col-lg-sm col-lg-xs'>
+        <header class='navbar navbar-default navbar-default-override' role='banner'>
+          <nav role='navigation'>
+            <ul class='nav navbar-nav'>
+              <li class='brand'>
+                <h4 class='pnsb'>Residential</h4>
+              </li>
+              <li class='nav-border-right'></li>
+              <li><a ng-href='' title='Bills &amp; Payments'>Bills &amp; Payments</a></li>
+              <li class='nav-border-right'></li>
+              <li><a ng-href='' title='Natural Gas Products'>Natural Gas Products</a></li>
+              <li class='nav-border-right'></li>
+              <li><a ng-href='' title='Save Money &amp; Energy'>Save Money &amp; Energy</a></li>
+              <li class='nav-border-right'></li>
+              <li><a ng-href='' title='Special Programs &amp; Assistance'>Special Programs &amp; Assistance</a></li>
+              <li class='nav-border-right'></li>
+              <li><a ng-href='' title='Resources'>Resources</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+  </div>
+  <div class='container hidden-lg hidden-md hidden-sm'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <select name='sticky_select' id='sticky_select' ng-model='sticky_select' ng-change='goTo(sticky_select)' ng-init='sticky_select = sticky_select[0]'>
+          <option value='_default_'>Navigation</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='residential-payment-content' class='gray-bg small-padded-module'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Making Payments'></div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12 metal-gray-border-right'>
+        <div class='row gray-bg-alt padded-bg'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <h4 class='uppercase orange-text small-header'>Make an Online Payment</h4>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <p class='pad-top-and-bottom'>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed donol 
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua lorem 
+                  ipsum der unitis.
+                </p> 
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <button type='button' class='btn btn-default btn-alt btn-alt-max-270 btn-credit-card'>
+                  Make an Online Payment
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='row'>
+              <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <h4 class='uppercase orange-text small-header pad-top-and-bottom'>Send us an Email</h4>
+                  </div>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <p class='pad-top-and-bottom'>
+                      Call our office 24/7 toll free <b>877-860-6020</b> to pay your bill by phone
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <h4 class='uppercase orange-text small-header pad-top-and-bottom'>Payment Locations</h4>
+                  </div>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <p class='pad-top-and-bottom'>
+                      25 convenient lorem ipsum dropoff locations to serve you 
+                    </p>
+                    <p>
+                      <a href='#' title='Send an Email' class='green-text'>
+                        Payment location map
+                        <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <h4 class='uppercase orange-text small-header pad-top-and-bottom'>Pay By Mail</h4>
+                  </div>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <p class='pad-top-and-bottom'>            
+                      Southwest Gas Corporation<br />
+                      P.O. Box 98890<br />
+                      Las Vegas, NV 89193-8890
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6'>
+                <div class='row'>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <h4 class='uppercase orange-text small-header pad-top-and-bottom'>Have Questions?</h4>
+                  </div>
+                  <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                    <p class='pad-top-and-bottom'>
+                      Lorem ipsum dolor sit amet coneds 
+                      adspicing der nonunny lorem
+                    </p>
+                    <p>
+                      <a href='#' title='Send an Email' class='green-text'>
+                        Account FAQs
+                        <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h4 class='uppercase black-text small-header'>Other Payment Options</h4>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h4 class='black-text smaller-header pnsb'>Setup automatic payments</h4>
+            <p class='black-text'>Lorem ipsum dolor sit amet con ads der nonunny der lorem</p>
+            <p>
+              <a ng-href='' title='Setup automatic payment' class='green-text'>
+                Setup automatic payment
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h4 class='black-text smaller-header pnsb'>Request a payment extension</h4>
+            <p class='black-text'>Lorem ipsum dolor sit amet con ads der nonunny der lorem</p>
+            <p>
+              <a ng-href='' title='Request an extension' class='green-text'>
+                Request an extension
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h4 class='black-text smaller-header pnsb'>Equal payment plans</h4>
+            <p class='black-text'>Lorem ipsum dolor sit amet con ads der nonunny der lorem</p>
+            <p>
+              <a ng-href='' title='Setup an equal payment plan' class='green-text'>
+                Setup an equal payment plan 
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h4 class='black-text smaller-header pnsb'>Western Union&reg; Speedpay&reg;</h4>
+            <p class='black-text'>Lorem ipsum dolor sit amet con ads der nonunny der lorem</p>
+            <p>
+              <a ng-href='' title='Visit Speedpay site' class='green-text'>
+                Visit Speedpay site
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='residential-go-paperless' class='white-bg small-padded-module'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Go Paperless'></div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h1 class='black-text ar'>More time for the things you love.</h1>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniamt, quis nostrud exercitation eiusmod 
+              temp incididunt ut labore et dolore magna aliqua. 
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h4 class='uppercase black-text small-header'>Benefits:</h4>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <ul class='green-dotted xsmall-padded-module'>
+              <li>Lipsum dolor sit amet, consectetur adipisicing elit</li>
+              <li>Sed do eiusmod tempor incidi</li>
+              <li>Dunt ut labore et dolore magna aliqua der nonunny</li>
+              <li>Sed do eiusmod tempor incidifsf</li>
+            </ul>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='inline-block spaced'>
+              <a ng-href='' title='View example of a bill' class='green-text'>
+                <i class='icon-pdf icon-pdf-bg-left'></i> 
+                View example of a bill
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              <button type='button' class='btn btn-default btn-lg btn-primary'>
+                Go Paperless
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h4 class='uppercase small-header orange-text'>What would you do if you had extra time?</h4>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='video-preview-block go-paperless-video-block'>
+              <div class='video-play-btn'>
+                <a ng-href='' title='Play Video'>
+                  <img src='images/shared/play_btn.png' alt='Play Video'>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Go Paperless today! And have more time for the things you love. [2:39]
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced inline-block'>
+              <a ng-href='' title='Visit Go paperless video' class='green-text'>
+                <i class='icon-video icon-video-bg-left'></i>
+                Go paperless video
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='residential-footer' class='gray-bg'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12 white-bg bg-shadowed third-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h4 class='orange-text uppercase small-header'>Special Assistance Programs</h4>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/residential/tmp_istock.png' alt='Special Assistance Programs' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              Lorem ipsum dolor sit amet, conse ur adipiscing elit. 
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus In Espñol.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 third-boxes-links'>
+            <p class='spaced'>
+              <a ng-href='' title='Arizona assistance programs' class='green-text pnsb'>
+                Arizona assistance programs 
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-medium'></i>
+              </a>
+              <br />
+              <a ng-href='' title='California assistance programs' class='green-text pnsb'>
+                California assistance programs 
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-medium'></i>
+              </a>
+              <br />
+              <a ng-href='' title='Nevada assistance programs' class='green-text pnsb'>
+                Nevada assistance programs 
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-medium'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12 white-bg bg-shadowed third-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h4 class='orange-text uppercase small-header'>Appliance Dealers/Contractors</h4>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/residential/tmp_istock.png' alt='Special Assistance Programs' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              Lorem ipsum dolor sit amet, conse ur adipiscing elit. 
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus In Espñol.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 third-boxes-links'>
+            <p class='spaced'>
+              <a ng-href='' title='Locate an appliance dealer and contractor' class='green-text pnsb'>
+                Locate an appliance dealer and contractor 
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-medium'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12 white-bg bg-shadowed third-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h4 class='orange-text uppercase small-header'>Save Money and Energy</h4>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/residential/tmp_istock.png' alt='Special Assistance Programs' />
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              Lorem ipsum dolor sit amet, conse ur adipiscing elit. 
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus In Espñol.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 third-boxes-links'>
+            <p class='spaced'>
+              <a ng-href='' title='Rebates &amp; Promotion' class='green-text pnsb'>
+                Rebates &amp; Promotion 
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-medium'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

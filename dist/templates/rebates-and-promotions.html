@@ -1,0 +1,341 @@
+
+<div class='rebates-and-promotions-hero padded-module'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-8 col-md-8 col-sm-12 col-xs-12'>
+        <h1 class='ar white-text hidden-sm hidden-xs'>
+          Rebates &amp; Promotions
+        </h1>
+        <h2 class='ar white-text hidden-lg hidden-md'>
+          Rebates &amp; Promotions
+        </h2>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+        <p class='white-text'>
+          Enjoy savings on energy costs and equipment while conserving our planet's 
+          valuable resources with energy-efficiency programs and rebates for your 
+          home or business.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=' hidden-lg hidden-mdgray-bg padded-module' ng-class="{ 'hidden-sm hidden-xs' : refineMenuOpen }">
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-12 col-xs-12'>
+        <button type='submit' class='btn btn-default btn-primary btn-lg' ng-click='refine(true)'>
+          &laquo; Refine
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='hidden-lg hidden-mdgray-bg padded-module' ng-class="{ 'hidden-sm hidden-xs' : !refineMenuOpen }">
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-12 col-xs-12'>
+        <button type='submit' class='btn btn-default btn-primary btn-lg' ng-click='refine(false)'>
+          Results &raquo;
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='rebates-and-promotions-filter' class='gray-bg padded-module'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12 no-padding-right' ng-class="{ 'hidden-sm hidden-xs' : !refineMenuOpen }">
+        <form class='white-bg'>
+          <div class='row'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+              <div class='static-popover-style-bg static-popover-stretch static-popover-large margin-bottom-20'>
+                <div class='static-popover-style-bg-top'>
+                  <h2>Filters</h2>
+                </div>
+                <div class='static-popover-style-bg-bottom'>
+                  <i class='glyphicon glyphicon-play'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='row no-margin-left'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 well'>
+              <div class='form-group'>
+                <label class='pnsb'>
+                  Select your state
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Arizona (AZ)
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' /> <span></span>
+                  California (CA)
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' /> <span></span>
+                  Nevada (NV)
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class='row no-margin-left no-margin-right'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+              <hr />
+            </div>
+          </div>
+          <div class='row no-margin-left'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 well'>
+              <div class='form-group'>
+                <label class='pnsb'>
+                  Select who you are
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  Homeowner/Renter
+                  <input type='radio' name='referral_type' id='select_who_you_are' checked='checked' />
+                  <span></span>
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  Business
+                  <input type='radio' name='referral_type' id='select_who_you_are' />
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class='row no-margin-left no-margin-right'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+              <hr />
+            </div>
+          </div>
+          <div class='row no-margin-left'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 well'>
+              <div class='form-group'>
+                <label class='pnsb'>
+                  Show Only
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  All
+                  <input type='radio' name='show_only' id='show_only_1' checked='checked' />
+                  <span></span>
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  Manufacturer Rebates
+                  <input type='radio' name='show_only' id='show_only_2' /> 
+                  <span></span> <img src='images/shared/question_circle_gray.png' />
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  Energy Efficiency
+                  <input type='radio' name='show_only' id='show_only_2' />
+                  <span></span> <img src='images/shared/question_circle_gray.png' />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class='row no-margin-left no-margin-right'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+              <hr />
+            </div>
+          </div>
+          <div class='row no-margin-left'>
+            <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 well'>
+              <div class='form-group'>
+                <label class='pnsb'>
+                  Select your product
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Appliance Connection Cooking
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Custom Rebate <img src='images/shared/question_circle_gray.png' />
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Dishwasher
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Energy Audit <img src='images/shared/question_circle_gray.png' />
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Fireplace
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Heating/Cooling
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Home Program <img src='images/shared/question_circle_gray.png' />
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Outdoor Appliances
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Solar Water Heating <img src='images/shared/question_circle_gray.png' />
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Washer/Dryer
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Water Heating
+                </label>
+              </div>
+              <div class='checkbox'>
+                <label>
+                  <input type='checkbox' checked='checked' /> <span></span>
+                  Weatherization <img src='images/shared/question_circle_gray.png' />
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class='col-lg-9 col-md-9 col-sm-12 col-xs-12 no-padding-left' ng-class="{ 'hidden-sm hidden-xs' : refineMenuOpen }">
+        <div class='table-responsive'>
+          <table class='table table-striped'>
+            <thead>
+              <tr>
+                <th>State</th>
+                <th>Category</th>
+                <th>Rebate Program</th>
+                <th class='hidden-sm hidden-xs'>Description</th>
+                <th class='hidden-sm hidden-xs'>Amount</th>
+                <th class='hidden-sm hidden-xs'>Exp. Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AZ</td>
+                <td>Appliance Connection</td>
+                <td>
+                  <a ng-href='#/rebates-and-promotions-detail' title='' class='green-text'>
+                    Appliance Connections Special Offer - AZ Homeowner/Renter
+                  </a>
+                </td>
+                <td class='hidden-sm hidden-xs'>
+                  Have your gas range, dryer or barbeque connected at a special price. 
+                  Contractors may not be available in all cities.  See link for details.
+                </td>
+                <td class='hidden-sm hidden-xs'>$11.50/therm up to $2,000 of 40% of installed cost</td>
+                <td class='hidden-sm hidden-xs'>09/30/2015</td>
+              </tr>
+              <tr>
+                <td>AZ</td>
+                <td>Appliance Connection</td>
+                <td>
+                  <a ng-href='#/rebates-and-promotions-detail' title='' class='green-text'>
+                    Appliance Connections Special Offer - AZ Homeowner/Renter
+                  </a>
+                </td>
+                <td class='hidden-sm hidden-xs'>
+                  Have your gas range, dryer or barbeque connected at a special price. 
+                  Contractors may not be available in all cities.  See link for details.
+                </td>
+                <td class='hidden-sm hidden-xs'>$11.50/therm up to $2,000 of 40% of installed cost</td>
+                <td class='hidden-sm hidden-xs'>09/30/2015</td>
+              </tr>
+              <tr>
+                <td>AZ</td>
+                <td>Appliance Connection</td>
+                <td>
+                  <a ng-href='#/rebates-and-promotions-detail' title='' class='green-text'>
+                    Appliance Connections Special Offer - AZ Homeowner/Renter
+                  </a>
+                </td>
+                <td class='hidden-sm hidden-xs'>
+                  Have your gas range, dryer or barbeque connected at a special price. 
+                  Contractors may not be available in all cities.  See link for details.
+                </td>
+                <td class='hidden-sm hidden-xs'>$11.50/therm up to $2,000 of 40% of installed cost</td>
+                <td class='hidden-sm hidden-xs'>09/30/2015</td>
+              </tr>
+              <tr>
+                <td>AZ</td>
+                <td>Custom Rebate</td>
+                <td>
+                  <a ng-href='#/rebates-and-promotions-detail' title='' class='green-text'>
+                    Arizona Smarter Greener Better® Custom Commercial Rebates Program- Business
+                  </a>
+                </td>
+                <td class='hidden-sm hidden-xs'>
+                  Southwest Gas commercial customers in Arizona may be eligible to receive rebates on the 
+                  installation of eligible measures resulting in verifiable natural gas savings.
+                </td>
+                <td class='hidden-sm hidden-xs'>$11.50/therm up to $2,000 of 40% of installed cost</td>
+                <td class='hidden-sm hidden-xs'>09/30/2015</td>
+              </tr>
+              <tr>
+                <td>AZ</td>
+                <td>Category Name</td>
+                <td>
+                  <a ng-href='#/rebates-and-promotions-detail' title='' class='green-text'>
+                    Name of Rebate
+                  </a>
+                </td>
+                <td class='hidden-sm hidden-xs'>
+                  High-efficiency Combined Heat and Power (CHP) technology can help lower energy costs and 
+                  increase efficiency of your business. Eligible commercial and industrial customers may 
+                  receive incentives.
+                </td>
+                <td class='hidden-sm hidden-xs'>See rebate for details</td>
+                <td class='hidden-sm hidden-xs'>09/30/2015</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

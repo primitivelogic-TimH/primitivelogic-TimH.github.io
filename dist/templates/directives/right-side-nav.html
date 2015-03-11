@@ -1,0 +1,25 @@
+
+<div id='right-side-nav' ng-class='{ "nav-init" : init }'>
+  <ul>
+    <li class='arrow' ng-class='{ "arrow-cloaked" : (current === 0) }'>
+      <a title='Scroll Up' ng-click='prev()'>
+        <i class='glyphicon glyphicon-chevron-up'></i>
+      </a>
+    </li>
+    <li class='item' ng-repeat='item in items track by $index' ng-class='{ "active" : isActiveSection(item.linksTo) }'>
+      <div class='item-body' ng-click='scrollTo($index)'>
+        <div class='item-number'>
+          <p>{{ $index + 1 }}</p>
+        </div>
+        <div class='item-title'>
+          <p>{{ item.title }}</p>
+        </div>
+      </div>
+    </li>
+    <li class='arrow' ng-class='{ "arrow-cloaked" : (current === items.length - 1) }'>
+      <a title='Scroll Down' ng-click='next()'>
+        <i class='glyphicon glyphicon-chevron-down'></i>
+      </a>
+    </li>
+  </ul>
+</div>

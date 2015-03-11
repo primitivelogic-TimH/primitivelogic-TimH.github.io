@@ -1,0 +1,1336 @@
+
+<!-- right side float nav/fixed to deep link -->
+<right-side-nav data='items'></right-side-nav>
+
+<div class='hero-container'>
+  <div class='hero-image-container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <img src='images/safety/hero.png' class='hero-image' />
+      </div>
+    </div>
+  </div>
+  <div class='hero-overlay'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+          <h1 class='ar black-text'>
+            Home &amp; Business Safety
+          </h1>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+          <p class='black-text'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-sticky-menu' class='gray-bg sticky-menu' ng-controller='StickyNavController'>
+  <div class='container hidden-xs'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <header class='navbar navbar-default navbar-default-override' role='banner'>
+          <nav role='navigation'>
+            <ul class='nav navbar-nav pull-left'>
+              <li class='brand'>
+                <h4 class='pnsb'>Safety Resources</h4>
+              </li>
+            </ul>
+            <ul class='nav navbar-nav pull-right'>
+              <li><a ng-href='' title='Home &amp; Business'>Home &amp; Business</a></li>
+              <li class='nav-border-right'></li>
+              <li><a ng-href='' title='Excavators &amp; Pipeline'>Excavators &amp; Pipeline</a></li>
+              <li class='nav-border-right'></li>
+              <li><a ng-href='' title='First Responders'>First Responders</a></li>
+              <li class='nav-border-right'></li>
+              <li><a ng-href='' title='Resources'>Resources</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+  </div>
+  <div class='container hidden-lg hidden-md hidden-sm'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <select name='sticky_select' id='sticky_select' ng-model='sticky_select' ng-change='goTo(sticky_select)' ng-init='sticky_select = sticky_select[0]'>
+          <option value='_default_'>Navigation</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+          <option value='/residential'>Residential</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='natural-gas-title' class='gray-bg'>
+  <div class='container padded-module'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Home &amp; Business Safety'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-basic-content' class='gray-bg padded-module'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12 metal-gray-border-right'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Today, over 60 million U.S. households and businesses use natural gas, 
+              an increase of 20% since 1988. During that same period, household 
+              safety incidents have declined by 29% according to the American Gas 
+              Association. Contributing to its excellent safety record are the unique 
+              characteristics of natural gas.
+            </p>
+          </div>
+        </div>
+        <div class='row white-bg padding-top-10'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='orange-text small-header uppercase'>Natural Gas</h2>
+          </div>
+        </div>  
+        <div class='row white-bg padding-bottom-20'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <ul class='green-dotted list-spaced'>
+              <li>
+                Has a limited range of flammability
+              </li>
+              <li>
+                Won’t burn if it has too much or too little oxygen
+              </li>
+              <li>
+                Won’t burn in the absence of a spark or ignition source
+              </li>
+              <li>
+                Is lighter than air so it will usually rise safely and disperse into the air if it’s allowed to vent freely
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Additionally, Southwest Gas adds an odorant to its natural gas called 
+              mercaptan which gives it a distinct smell similar to rotten eggs. 
+              This smell makes it easy to identify when a gas leak has occurred. 
+              Even with this in mind, it’s still important to understand natural gas 
+              and be aware of safety tips concerning its use.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div id='gas-leak-info'>
+              <h2 class='small-header uppercase black-text'>Suspect a Natural Gas Leak?</h2>
+              <h1 class='small-header uppercase black-text no-margin'>Call 911</h1>
+              <h2 class='small-header uppercase black-text no-margin'>and</h2>
+              <h1 class='small-header uppercase black-text no-margin'>Southwest Gas</h1>
+              <h2 class='small-header uppercase black-text no-margin'>877-860-6020</h2>
+              <p class='spaced'>Whether you’re a customer or not.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-awareness' class='white-bg padded-module' in-view='becameInView("safety-awareness")'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div static-popover='Leak Recognition &amp; Awareness'></div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='ar'>It smells bad for a reason.</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+              Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. 
+              Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis 
+              dis parturient montes.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='orange-text small-header uppercase'>What do you do if you suspect a leak?</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <ul class='green-dotted list-spaced'>
+              <li>Leave the area immediately.</li>
+              <li>
+                From a safe place, <span class='pnb'>call 911</span> and 
+                <span class='pnb'>Southwest Gas at 877-860-6020</span>, 
+                day or night. A Southwest Gas representative will be there as 
+                soon as possible.
+              </li>
+              <li>Don't smoke or use matches or lighters.</li>
+              <li>
+                Don't turn on or off any electric switches, thermostats, 
+                or appliance controls or use automated doors.
+              </li>
+              <li>Don't start or stop an engine.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div static-popover='Detection'></div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='row xsmall-padded-module'>
+                  <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
+                    <p class='centered'>
+                      <img src='images/safety/circle_ear_yellow.png' alt=''>
+                    </p>
+                  </div>
+                  <div class='col-lg-9 col-md-9 col-sm-9 col-xs-9'>
+                    <div class='row'>
+                      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                        <h2 class='small-header uppercase black-text no-margin'>Hear</h2>
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                        <p class='spaced'>
+                          Hear an unusual hissing or roaring coming from the ground or an aboveground pipeline.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='row xsmall-padded-module'>
+                  <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
+                    <p class='centered'>
+                      <img src='images/safety/circle_eye_orange.png' alt=''>
+                    </p>
+                  </div>
+                  <div class='col-lg-9 col-md-9 col-sm-9 col-xs-9'>
+                    <div class='row'>
+                      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                        <h2 class='small-header uppercase black-text no-margin'>See</h2>
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                        <p class='spaced'>
+                          See dirt or water blowing into the air, discolored 
+                          vegetation surrounding a pipeline, or standing water continuously bubbling.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <div class='row xsmall-padded-module'>
+                  <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
+                    <p class='centered'>
+                      <img src='images/safety/circle_nose_green.png' alt=''>
+                    </p>
+                  </div>
+                  <div class='col-lg-9 col-md-9 col-sm-9 col-xs-9'>
+                    <div class='row'>
+                      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                        <h2 class='small-header uppercase black-text no-margin'>Smell</h2>
+                      </div>
+                    </div>
+                    <div class='row'>
+                      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                        <p class='spaced'>
+                          Smell an odor similar to rotten eggs, even if it’s faint or momentary.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-call-811' class='yellow-bg padded-module' in-view='becameInView("safety-call-811")' >
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <h1 class='ar centered'>Call 811 before you dig.</h1>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <p class='centered'>
+          One call to 811 gets underground utility-owned lines marked for free. 
+          Whether you're a homeowner or professional excavator, every 
+          digging job requires a call - even small projects.
+        </p>
+      </div>
+    </div>
+    <div class='row small-padded-module inline'>
+      <div class='col-lg-2 col-md-2 col-sm-1 col-xs-1'></div>
+      <div class='col-lg-5 col-md-5 col-sm-6 col-xs-6'>
+        <ul class='black-dotted'>
+          <li>Call at least two working days before digging</li>
+          <li>Wait for the site to be marked</li>
+        </ul>
+      </div>
+      <div class='col-lg-3 col-md-3 col-sm-4 col-xs-4'>
+        <ul class='black-dotted'>
+          <li>Respect the marks</li>
+          <li>Dig with care</li>
+        </ul>
+      </div>
+      <div class='col-lg-2 col-md-2 col-sm-1 col-xs-1'></div>
+    </div>
+    <div class='row small-padded-module'>
+      <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+        <button type='button' class='btn btn-default btn-alt btn-header-hat'>
+          Excavator Safety
+        </button>
+      </div>
+      <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+        <button type='button' class='btn btn-default btn-alt btn-header-radar'>
+          Pipeline Locations
+        </button>
+      </div>
+      <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+        <button type='button' class='btn btn-default btn-alt btn-header-first-responders'>
+          First Responders
+        </button>
+      </div>
+      <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+        <button type='button' class='btn btn-default btn-alt btn-header-811'>
+          Call Before You Dig
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='appliance-safety' class='gray-bg padded-module' in-view='becameInView("appliance-safety")' >
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Appliance Safety'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-appliance-safety-carousel' class='gray-bg padded-module'>
+  <div class='container-canvas'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <carousel interval='10000' hm-swipe-left='prev();' hm-swipe-right='next();'>
+          <slide active='activeState[0]'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+                  <h2 class='ar'>Natural Gas Fireplace</h2>
+                  <p class='spaced text-left'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit 
+                    amet lacus accumsan et viverra justo commodo. Proin sodales 
+                    pulvinar tempor. Cum sociis natoque penatibus et magnis dis 
+                    parturient montes, nascetur ridiculus mus. Nam fermentum, 
+                    nulla luctus pharetra vulputate. Nascetur ridiculus mus. Learn More
+                  </p>
+                  <p class='spaced'>
+                    <a ng-href='' title='Learn More' class='green-text'>
+                      Learn More 
+                      <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+                    </a> 
+                  </p>
+                </div>
+                <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+                  <img src='images/safety/video.png' alt='' />
+                </div>
+              </div>
+            </div>
+          </slide>
+          <slide active='activeState[1]'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+                  <h2 class='ar'>Natural Gas Fireplace 2</h2>
+                  <p class='spaced text-left'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit 
+                    amet lacus accumsan et viverra justo commodo. Proin sodales 
+                    pulvinar tempor. Cum sociis natoque penatibus et magnis dis 
+                    parturient montes, nascetur ridiculus mus. Nam fermentum, 
+                    nulla luctus pharetra vulputate. Nascetur ridiculus mus. Learn More
+                  </p>
+                  <p class='spaced'>
+                    <a ng-href='' title='Learn More' class='green-text'>
+                      Learn More 
+                      <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+                    </a> 
+                  </p>
+                </div>
+                <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+                  <img src='images/safety/video.png' alt='' />
+                </div>
+              </div>
+            </div>
+          </slide>
+          <slide active='activeState[2]'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+                  <h2 class='ar'>Natural Gas Fireplace 3</h2>
+                  <p class='spaced text-left'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit 
+                    amet lacus accumsan et viverra justo commodo. Proin sodales 
+                    pulvinar tempor. Cum sociis natoque penatibus et magnis dis 
+                    parturient montes, nascetur ridiculus mus. Nam fermentum, 
+                    nulla luctus pharetra vulputate. Nascetur ridiculus mus. Learn More
+                  </p>
+                  <p class='spaced'>
+                    <a ng-href='' title='Learn More' class='green-text'>
+                      Learn More 
+                      <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+                    </a> 
+                  </p>
+                </div>
+                <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+                  <img src='images/safety/video.png' alt='' />
+                </div>
+              </div>
+            </div>
+          </slide>
+        </carousel>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-customer-buried-piping' class='padded-module' in-view='becameInView("safety-customer-buried-piping")' >
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Customer Buried Piping'></div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <p class='spaced white-text'>
+          If you’re a property owner or manager, tenant and/or occupant, 
+          you’re responsible for maintaining all gas lines on your 
+          side of the meter. This “customer buried piping” includes 
+          all gas lines running from the gas meter to the appliances 
+          or equipment on your property. In some cases, the meter 
+          may be located at your property line or a distance away 
+          from your home or business.
+        </p>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <p class='spaced white-text'>
+          A licensed, qualified plumber or contractor can assist you in finding, 
+          inspecting and repairing your customer buried piping. 
+          <a ng-href='' title='Contractors List' class='green-text underline'>Click here</a> 
+          to search a list of contractors in your area or call the Southwest 
+          Gas Energy Specialists at 800-654-2765.
+        </p>
+        <p>
+          <a ng-href='' title='Buried Piping Information' class='green-text'>
+            Buried Piping Information 
+            <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+          </a> 
+        </p>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <h2 class='small-header uppercase white-text'>To keep your home or business safe</h2>
+      </div>
+    </div>
+    <div id='piping-white-symbols' class='row padded-module'>
+      <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+        <p class='centered'>
+          <img src='images/safety/circle_remember_white.png' alt='Monitor' />  
+        </p>
+        <p class='centered white-text'>
+          Monitor and properly maintain the natural gas lines you own
+        </p>
+      </div>
+      <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+        <p class='centered'>
+          <img src='images/safety/circle_magnify_white.png' alt='Inspect' />  
+        </p>
+        <p class='centered white-text'>
+          Periodically inspect your lines for leaks and/or corrosion
+        </p>
+      </div>
+      <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+        <p class='centered'>
+          <img src='images/safety/circle_repair_white.png' alt='Repair' />  
+        </p>
+        <p class='centered white-text'>
+          Repair the lines immediately if any unsafe condition is discovered
+        </p>
+      </div>
+      <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+        <p class='centered'>
+          <img src='images/safety/circle_dig_white.png' alt='Monitor' />  
+        </p>
+        <p class='centered white-text'>
+          Hand dig when excavating near any buried gas piping
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-carbon-monoxide' class='gray-bg padded-module' in-view='becameInView("safety-carbon-monoxide")' >
+  <div class='container'>
+    <div class='row padding-bottom-20 '>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12 hidden-sm hidden-xs'>
+        <div static-popover='Carbon Monoxide Awareness'></div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div static-popover='If you suspect carbon monoxide'></div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+        <div class='row metal-gray-border-right'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit 
+              amet lacus accumsan et viverra justo commodo. Proin sodales 
+              pulvinar tempor. Cum sociis natoque penatibus et magnis dis 
+              parturient montes, nascetur ridiculus mus.
+            </p>
+          </div>
+        </div>
+        <div class='row white-bg padded-bg metal-gray-border-right'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <h2 class='orange-text uppercase small-header'>Symptoms of carbon monoxide exposure</h2>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <ul class='green-dotted list-spaced'>
+                  <li>
+                    Flu-like symptoms
+                  </li>
+                   <li>
+                    Dizziness
+                  </li>
+                   <li>
+                    Headache
+                  </li>
+                   <li>
+                    Fatigue
+                  </li>
+                   <li>
+                    Nausea
+                  </li>
+                   <li>
+                    Shortness of breath
+                  </li>
+                   <li>
+                   Mental confusion
+                  </li>
+                   <li>
+                    Vomiting
+                  </li>
+                   <li>
+                    Loss of muscular coordination
+                  </li>
+                   <li>
+                    Loss of consciousness
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row padding-top-20'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='uppercase black-text small-header'>Prevent carbon monoxide emergencies</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Have your natural gas appliances serviced. Southwest Gas recommends 
+              that you have your natural gas appliances serviced annually by a 
+              trained professional. In addition to keeping your appliances operating 
+              at optimal efficiency for energy conservation, this is one of the best 
+              ways to prevent carbon monoxide emergencies. For a list of qualified 
+              plumbers, contractors or appliance dealers, 
+              <a ng-href='' title='Contractors List' class='green-text underline'>Click here</a>, 
+              search online or call the Southwest Gas Energy Specialists at 800-654-2765.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced centered'>
+              <button type='button' class='btn btn-default btn-lg btn-primary'>
+                Appliance Dealers &amp; Contractors
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p>
+              Leave the premises and get into fresh air immediately.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='black-text small-header uppercase'>Call 911</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Call 911 or your local emergency number as 
+              soon as possible to get medical attention.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='black-text small-header uppercase'>Call Southwest Gas</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Call (877) 860-6020 Whether you’re a customer or not.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='black-text small-header uppercase'>Do Not Re-Enter the Building</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Don’t re-enter the building until an emergency official 
+              has determined the building to be safe and you have been 
+              given permission to do so.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-excess-flow-valves' class='white-bg padded-module' in-view='becameInView("safety-excess-flow-valves")' >
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Excess Flow Valves'></div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              An excess flow valve (EFV) is a device that automatically shuts off 
+              the flow of natural gas if a service line is broken. Service line 
+              damage usually results from some type of excavation or digging.
+            </p>
+            <p class='spaced'>
+              An EFV may also restrict the flow of gas if the gas meter is damaged, 
+              generally as a result of vehicle impact and, on rare occasions, 
+              from large snow loads.
+            </p>
+            <p class='spaced'>
+              The EFV is installed on the service line that runs underground 
+              between the gas main and the meter on a customer's property. 
+              Because the EFV restricts the flow of gas, it reduces the potential 
+              for fire-related property damage, personal injury, and death. 
+              Southwest Gas has installed EFVs on most residences built after June 2008.
+            </p>
+            <p class='spaced'>
+              While the valve provides enhanced safety, it’s not designed to operate in 
+              response to small leaks in the service line, nor protect against customer 
+              appliance malfunction, houseline leaks, or small punctures in the 
+              underground pipe. An EFV may not protect against damage to pipelines 
+              from earthquakes or flooding.
+            </p>
+            <p class='spaced'>
+              If you’d like a cost estimate to have an EFV installed at your residence, 
+              or if you’d like to find out if you already have an EFV, please call 
+              the Energy Specialists at 1-800-654-2765 for information.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='black-text small-header uppercase padding-bottom-10'>Lorem Ipsum Dolor Sit Amet</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='video-preview-block safety-video-block'>
+              <div class='video-play-btn'>
+                <a ng-href='' title='Play Video'>
+                  <img src='images/shared/play_btn.png' alt='Play Video' />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit 
+              in Español and English.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='inline-block spaced'>
+              <a ng-href='' title='View example of a bill' class='green-text'>
+                <i class='icon-pdf icon-pdf-bg-left'></i> 
+                About Excess Flow Valves 
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-tubing' class='gray-bg padded-module' in-view='becameInView("safety-tubing")' >
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Corrugated Stainless Steel Tubing'></div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Corrugated stainless steel tubing (CSST) is a flexible, 
+              thin-walled metallic tubing used to supply natural gas 
+              in some residential, commercial, and industrial buildings. 
+              CSST often has a yellow or black plastic coating and is 
+              typically found inside walls and through and along floor 
+              and ceiling joists. It’s not the same as the 
+              <a ng-href='' title='flexible appliance connectors' class='green-text underline'>
+                flexible appliance connectors
+              </a> 
+              that attach directly to your gas appliances.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='black-text small-header uppercase padding-bottom-10'>Protect against lightning</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              To help protect structures from potential lightning strikes, 
+              the installer of CSST and/or the owner/operator of the structure 
+              where the CSST is used should consider installing an appropriate 
+              lightning protection system pursuant to NFPA 780 or other recognized standards.
+            </p>
+            <p class='spaced'>
+              Southwest Gas doesn't provide inspection service for CSST installations. If 
+              you’re unsure whether CSST is installed in your structure, contact your builder, 
+              contractor, or a licensed plumber for an evaluation or for more information.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <div class='video-preview-block safety-video-block'>
+              <div class='video-play-btn'>
+                <a ng-href='' title='Play Video'>
+                  <img src='images/shared/play_btn.png' alt='Play Video' />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='black-text small-header uppercase padding-bottom-10'>
+              Class action lawsuit involving CSST
+            </h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              In 2002, four manufacturers of CSST settled a class action lawsuit 
+              in which it was alleged by plaintiffs, but denied by defendants, 
+              that CSST posed an unreasonable risk of gas leaks and fire due to 
+              lightning strikes. For more information on the CSST Settlement Agreement, 
+              visit pddocs.com/csst or call 800-420-2916.
+            </p>
+            <p class='spaced'>
+              <a ng-href='' title='Learn More About the Lawsuit' class='green-text'>
+                Learn More About the Lawsuit
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-snow-precaution' class='padded-module' in-view='becameInView("safety-snow-precaution")' >
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <div static-popover='Snow Precautions'></div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <p class='spaced'>
+          If you live in an area that receives heavy snowfall, 
+          extra precautions are needed to ensure that gas piping, 
+          meters, and outdoor appliances remain safe.
+        </p>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <h2 class='small-header uppercase black-text'>Help protect against potential damage</h2>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <p class='spaced'>
+                  Install a structurally engineered shelter above your natural 
+                  gas meter to prevent snow and ice accumulation. For more 
+                  information on how to build a snow shelter or for a contractor 
+                  referral, click here or call 800-654-2765. You can also 
+                  <a ng-href='' title='Download the Blueprints' class='green-text underline'>
+                    download the blueprints 
+                  </a>
+                  for an approved meter shelter for your area.
+                </p>
+                <p class='spaced'>
+                  Use a broom, instead of a shovel where possible, to clear snow or 
+                  ice off natural gas meters and outdoor appliances (including 
+                  regulators, associated piping, and propane appliances).
+                </p>
+                <p class='spaced'>
+                  When shoveling or plowing, don’t pile snow on gas meters or 
+                  outdoor appliances.  
+                  <a ng-href='' title='Download additional Snow Safety info.' class='green-text underline'>
+                    Download additional Snow Safety info.
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+            <div class='row'>
+              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                <p class='spaced'>
+                  Keep all outside gutters free of leaves and debris, including 
+                  those above or near the natural gas meter and outdoor appliances.
+                </p>
+                <p class='spaced'>
+                  Natural gas appliances require proper exhaust and ventilation. 
+                  It’s important to know the location of air supply and exhaust ducts, 
+                  and keep them free of snow, ice, leaves, or other debris. Keeping 
+                  vents clear can prevent operational problems for appliances and 
+                  the accumulation of carbon monoxide in buildings.
+                </p>
+                <p class='spaced'>
+                  If you live in California, make sure your residence has functioning 
+                  carbon monoxide alarms as required by Health and Safety Code §17926.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <p class='centered'>
+          <button type='button' class='btn btn-default btn-lg btn-primary btn-stretch'>
+            Appliance Dealers &amp; Contractors
+          </button>
+        </p>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <p class='centered'>
+          <button type='button' class='btn btn-default btn-lg btn-primary btn-stretch'>
+            Meter Shelter Plans Blueprint
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-earthquakes' class='padded-module' in-view='becameInView("safety-earthquakes")' >
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Earthquake &amp; Seismic Valves'></div>
+      </div>
+    </div>
+    <div class='row margin-top-10'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <p class='spaced white-text'>
+          An earthquake or seismic shut-off valve automatically shuts off 
+          your natural gas service when an earthquake of a sufficient magnitude 
+          occurs at your home’s location. These valves can be purchased and 
+          installed through independent suppliers and contractors.
+        </p>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <p class='spaced white-text'>
+          If an earthquake or other significant event causes your seismic shut-off 
+          valve to close, contact a licensed, qualified contractor to reset the valve, 
+          verify that no gas leaks exist, and perform a safety check of your gas appliances 
+          before they’re placed back into operation. For a list of qualified plumbers, 
+          contractors, or appliance dealers in your area, click here, search online, 
+          or call the Southwest Gas Energy Specialists at 800-654-2765.
+        </p>
+      </div>
+    </div>
+    <div class='row white-text margin-top-10'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <p class='centered'>
+          <button type='button' class='btn btn-default btn-lg btn-stretch'>
+            Appliance Dealers &amp; Contractors
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-manhole'></div>
+
+<div id='safety-work' class='padded-module' in-view='becameInView("safety-work")'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Sewer Work Safeguard'></div>
+      </div>
+    </div>
+    <div class='row margin-top-10'>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='white-text uppercase small-header'>Sewer Work Safeguards</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced white-text'>
+              Natural gas utilities across the country have discovered locations 
+              where natural gas pipes were inadvertently installed through sewer 
+              pipes. This doesn’t create a safety hazard so long as the natural 
+              gas pipe is undamaged. However, damage to natural gas pipes can 
+              occur when equipment is used to unclog sewer pipes. This can 
+              lead to a natural gas leak that could result in a fire or explosion, 
+              possibly causing injury or death to those who unclog the sewer 
+              pipes and to those in structures attached to the sewer pipe. 
+              Before you have your sewer pipe cleaned: 
+              <a ng-href='' title='Sewer Work Safeguard' class='green-text'>
+                Sewer Work Safeguard pdf.
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='centered'>
+              <img src='images/safety/811_alt.png' alt='Call 811' />
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced white-text'>
+              Know what's inside, call 811 and follow their instructions for 
+              sewer clearing. Southwest Gas will respond promptly to mark the 
+              location of our underground pipe before you clean out the sewer 
+              pipe. There’s no charge for this service.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='white-text uppercase small-header'>Purge Safely</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced white-text'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit 
+              amet lacus accumsan et viverra justo commodo. Proin sodales 
+              pulvinar tempor. Cum sociis natoque penatibus et magnis dis 
+              parturient montes, nascetur ridiculus mus. Nam fermentum, 
+              nulla luctus pharetra vulputate, felis tellus mollis orci, 
+              sed rhoncus sapien nunc eget odio. Cum sociis natoque penatibus 
+              et magnis dis parturient montes, nascetur ridiculus mus. Nam 
+              fermentum, nulla luctus pharetra vulputate, felis tellus 
+              mollis orci, sed rhoncus sapien nunc eget odio.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='white-text uppercase small-header'>Sense a Bump? Call it in!</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced white-text'>
+              Also, if you or your plumber can sense or see, but have not 
+              penetrated an obstruction when clearing a sewer pipe, call 
+              Southwest Gas at 1-877-860-6020 and press "9" for 
+              immediate assistance to ensure that a gas pipe has 
+              not been damaged. There’s no charge for this service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-identify-employee' class='gray-bg padded-module' in-view='becameInView("safety-identify-employee")' >
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='How to Identify an Employee'></div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Southwest Gas cautions you to be mindful of individuals who try 
+              to gain access to your home by posing as utility workers. 
+              If someone shows up at your door to perform services you haven't 
+              requested, call us immediately at <span class='pnb'>877-860-6020</span>,
+              24 hours a day, 7 days a week to verify their identity - whether you're a 
+              Southwest Customer or not. If they're Southwest Gas employees 
+              or our authorized contractors, they'll gladly wait outside 
+              while you make the call.
+            </p>
+          </div>
+        </div>
+        <div class='row white-bg padding-top-10'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='orange-text small-header uppercase'>Our Employees &amp; Contractors</h2>
+          </div>
+        </div>  
+        <div class='row white-bg padding-bottom-20'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <ul class='green-dotted list-spaced'>
+              <li>
+                Wear identification badges that include their name, picture, and company logo
+              </li>
+              <li>
+               Generally come to your home only when service is requested
+              </li>
+              <li>
+                Identify themselves and the purpose of their visit
+              </li>
+              <li>
+                Enter your home only at your request
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Additionally, most Southwest Gas employees drive a marked 
+              company vehicle and wear a company uniform with our logo.
+            </p>
+            <p class='spaced'>
+              If you're still unsure, please call us to confirm that the 
+              person at your door is one of our employees or contractors. 
+              Be sure to report any suspicious activity to the police.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/safety/contractor.png' alt='Contractor' class='mild-white-border margin-left-20' />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-material-data-sheet' class='white-bg padded-module waypoint' in-view='becameInView("safety-material-data-sheet")'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Material Data Sheet'></div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+        <div class='row padding-top-10'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='orange-text small-header uppercase'>Our MSDS contains extensive information about natural gas</h2>
+          </div>
+        </div>  
+        <div class='row white-bg padding-bottom-20'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding'>
+            <ul class='green-dotted list-spaced'>
+              <li>
+                Emergency response information
+              </li>
+              <li>
+                Chemical makeup and characteristics
+              </li>
+              <li>
+                How to recognize and safely account for potential hazards that you 
+                may not be familiar with (including odor masking, odor fatigue, and odor fade)
+              </li>
+              <li>
+                General precautions for safe handling and use of natural gas
+              </li>
+              <li>
+                Proper purging procedures
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced padding-top-20'>
+              Although natural gas has a very positive safety record, lack of 
+              knowledge may lead to unsafe practices. To help you identify and 
+              understand the many procedures and proper handling of odorized natural gas, 
+              Southwest Gas has prepared Material Safety Data Sheets (MSDS) (also available in Spanish).
+            </p>
+            <p>
+              <a ng-href='' title='Material Data Safety Sheet (English)' class='green-text'>
+                <i class='icon-pdf icon-pdf-bg-left'></i> 
+                Material Data Safety Sheet (English) 
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+            <p>
+              <a ng-href='' title='Material Data Safety Sheet (Español)' class='green-text'>
+                <i class='icon-pdf icon-pdf-bg-left'></i> 
+                Material Data Safety Sheet (Español)
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='safety-additional-resources' class='gray-bg padded-module waypoint'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div static-popover='Additional Safety Resources'></div>
+      </div>
+    </div>
+    <div class='row padded-module'>
+      <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12 white-bg bg-shadowed third-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='orange-text uppercase small-header'>Safety Video for Kids</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/residential/tmp_istock.png' alt='Special Assistance Programs'>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Lorem ipsum dolor sit amet, conse ur adipiscing elit. 
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus In Espñol.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 third-boxes-links'>
+            <p class='spaced'>
+              <a ng-href='' title='Natural Gas Kids Video' class='green-text pnsb'>
+                Natural Gas Kids Video
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12 white-bg bg-shadowed third-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='orange-text uppercase small-header'>Customer Safety Brochure</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/residential/tmp_istock.png' alt='Special Assistance Programs'>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Lorem ipsum dolor sit amet, conse ur adipiscing elit. 
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus In Espñol.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              <a ng-href='' title='Locate an appliance dealer and contractor' class='green-text pnsb'>
+                Locate an appliance dealer and contractor 
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-small'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='col-lg-4 col-md-4 col-sm-12 col-xs-12 white-bg bg-shadowed third-boxes'>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <h2 class='orange-text uppercase small-header'>Gas Fireplace Safety Tips</h2>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <img src='images/residential/tmp_istock.png' alt='Special Assistance Programs'>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              Lorem ipsum dolor sit amet, conse ur adipiscing elit. 
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus In Espñol.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+            <p class='spaced'>
+              <a ng-href='' title='Rebates &amp; Promotion' class='green-text pnsb'>
+                Rebates &amp; Promotion 
+                <i class='glyphicon glyphicon-chevron-right glyphicon-chevron-medium'></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='safety-evacuation' class='row padded-module'>
+      <div class='col-lg-4 col-md-7 col-sm-0 col-xs-0'></div>
+      <div class='col-lg-6 col-md-3 col-sm-8 col-xs-8'>
+        <h3 class='ar middle-aligned text-right'>
+          <a ng-href='' title='Excavator &amp; Pipeline safety' class='green-text'>
+            Excavator &amp; Pipeline safety
+          </a>
+        </h3>
+      </div>
+      <div class='col-lg-2 col-md-2 col-sm-4 col-xs-4'>
+        <p class='text-right'>
+          <a ng-href='' title='Evacuation Safety' class='green-text'>
+            <img src='images/shared/carousel_arrow_green_right.png' alt='Evacuation Safety' />
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

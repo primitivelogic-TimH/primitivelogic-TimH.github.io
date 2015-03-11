@@ -1,0 +1,15 @@
+{
+  "default": {
+    "header": [
+      "www/css/build.min.css"
+    ],
+    "footer": [
+      "www/js/build.min.js"
+    ]
+  },
+  "a-non-existent-page": {
+    "header": [
+      "www/css/build-sample.css"
+    ]
+  }
+}

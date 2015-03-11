@@ -1,0 +1,730 @@
+
+<div id='nav-container' class='container' ng-controller='NavController' ng-class='{ "pushed_down" : alertVisible }'>
+  <div class='row header-nav-container'>
+    <div class='col-lg-3 col-md-3 col-sm-3 hidden-xs navbar-logo-image'>
+      <a ng-href='{{ BASE_URL("/") }}' title='Southwest Gas'>
+        <img src='images/shared/logo.png' alt='Southwest Gas' />
+      </a>
+    </div>
+    <div class='col-lg-9 col-md-9 col-sm-9'>
+      <div class='row hidden-xs'>
+        <div class='col-lg-3 col-md-3 hidden-sm'>
+          <p>Welcome back, John!</p>
+          <p><a ng-href='' class='gray-text'>Logout</a></p>
+        </div>
+        <div class='col-lg-5 col-md-5 hidden-sm gray-border-left'>
+          <div class='row'>
+            <div class='col-lg-4 col-md-4'>
+              <p>
+                <a ng-href='' title='About Us' class='gray-text'>About Us</a>
+              </p>
+            </div>
+            <div class='col-lg-4 col-md-5'>
+              <p>
+                <a ng-href='{{ BASE_URL("/contact") }}' title='Contact Us' class='gray-text'>Contact Us</a>
+              </p>
+            </div>
+            <div class='col-lg-4 col-md-3'>
+              <p>
+                <a ng-href='' title='Español' class='gray-text'>Español</a>
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-lg-12 col-md-12'>
+              <p><span class='orange-text'>Smell gas odors? Call</span> <a href='tel:18778606020' class='orange-text' title='Call'>1-877-860-6020</a></p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-4 col-md-4 hidden-sm'>
+          <form role='search'>
+            <div class='form-group fancy-search'>
+              <i class='glyphicon glyphicon-search input-search-icon-bg'></i>
+              <input type='text' class='form-control search no-extras' placeholder='Search' ng-click='$event.stopPropagation()'>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-lg-12 col-md-12 col-sm-12'>
+          <header class='navbar navbar-default navbar-default-override' role='banner'>
+            <div class='navbar-header'>
+              <button class='navbar-toggle' type='button' ng-click='toggleNav()'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+              </button>
+              <button type='button' class='btn-search-mobile hidden-sm hidden-md hidden-lg'>
+                <span class='sr-only'>Search</span>
+                <i class='glyphicon glyphicon-search'></i>
+              </button>
+              <a ng-href='' class='navbar-brand navbar-brand-mobile hidden-sm hidden-lg hidden-md'>
+                <img src='images/shared/logo_mobile.png' alt='Southwest Gas' />
+              </a>
+            </div>
+            <nav class='collapse navbar-collapse' role='navigation' ng-swipe-right='toggleNav()'>
+              <ul class='nav navbar-nav'>
+                <li class='dropdown' dropdown>
+                  <a ng-href='' class='dropdown-toggle' dropdown-toggle>
+                    <i class='my-account-lock'></i> My Account <i class='glyphicon glyphicon-chevron-down'></i>
+                  </a>
+                  <ul class='dropdown-menu dropdown-menu-my-account' role='menu'>
+                    <div class='dropdown-custom relative'>
+                      <div class='container'>
+                        <div class='row'>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase lock-header'>
+                                  <i class='my-account-lock'></i> Login to my Account
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <form>
+                                  <div class='form-group'>
+                                    <input type='email' class='form-control' name='email' placeholder='Email Address' ng-click='$event.stopPropagation()' />
+                                  </div>
+                                  <div class='form-group'>
+                                    <input type='password' class='form-control' name='password' placeholder='Password' ng-click='$event.stopPropagation()' />
+                                  </div>
+                                  <button type='submit' class='btn btn-default btn-lg btn-primary btn-stretch' ng-click='$event.stopPropagation()'>
+                                    Log In
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  Not Registered Yet?
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <p>Check out some of the benefits you get with an account.</p>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='green-dotted nav-links-large'>
+                                  <li>Make a one time payment</li>
+                                  <li>Request Payment Extension</li>
+                                  <li>Start, Stop or Transfer Service</li>
+                                  <li>Go paperless</li>
+                                  <li>Set up reminders and more</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='orange-text small-header'>
+                                  <a ng-href='' title='Create an Account' class='green-text'>
+                                    Create an Account
+                                  </a>
+                                </h2>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  My Account Options
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='green-dotted nav-links-large'>
+                                  <li>
+                                    <a ng-href='' title=''>Make a online payment</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title=''>Ways to pay</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title=''>
+                                      Automatic Payment Plan <i class='my-account-lock'></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title=''>
+                                      Equal Payment Plans <i class='my-account-lock'></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title=''>Find Payment Locations</a>
+                                  </li>
+                                   <li>
+                                    <a ng-href='' title=''>
+                                      Understanding your bill
+                                    </a>
+                                  </li>
+                                   <li>
+                                    <a ng-href='' title=''>
+                                      Outage Map
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  Special Programs &amp; Assistance
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='green-dotted nav-links-large'>
+                                  <li>
+                                    <a ng-href='' title=''>Assistance Programs</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title=''>
+                                      Get Payment Extensions 
+                                      <i class='my-account-lock'></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title=''>
+                                      Energy Share
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='dropdown-custom-shadow'>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class='dropdown' dropdown>
+                  <a ng-href='' class='dropdown-toggle' dropdown-toggle>
+                    Residential <i class='glyphicon glyphicon-chevron-down'></i>
+                  </a>
+                  <ul class='dropdown-menu dropdown-menu-residential' role='menu'>
+                    <div class='dropdown-custom relative'>
+                      <div class='container'>
+                        <div class='row'>
+                          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-9'>
+                            <h2 class='small-header orange-text uppercase'>
+                              <a ng-href='{{ BASE_URL("/residential") }}' title='Residential Services' class='orange-text no-padding'>
+                                Residential Services
+                              </a>
+                            </h2>
+                          </div>
+                        </div>
+                        <div class='row'>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  Bills &amp; Payments
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Make an Online Payment</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Easy Ways to Pay</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Automatic Payments</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Pay Station Locations</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Get Payment Extensions</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>My Account FAQs</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  Special Programs &amp; Assistance
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Assistance Programs</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/contractor-referrals") }}' title=''>Appliance &amp; Contractor Referral</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Seniors Helping Seniors</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Third Party Notification Program</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Energy Share</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Programs for Landlords</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' class='underline' ng-click='$event.stopPropagation()'>See All</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  Save Money &amp; Energy
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/rebates-and-promotions") }}' title=''>Rebates &amp; Promotions</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Energy Saving Tips</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>
+                                      Why Natural Gas?
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/natural-gas-products") }}' title='Natural Gas Products'>
+                                      Natural Gas Products
+                                    </a>
+                                  </li>
+                                   <li>
+                                    <a ng-href='' title=''>
+                                      Energy Efficient Homes
+                                    </a>
+                                  </li>
+                                   <li>
+                                    <a ng-href='' title='' class='underline' ng-click='$event.stopPropagation()'>
+                                      View All
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10'>
+                                <button type='button' class='btn btn-default btn-alt btn-credit-card' ng-click='$event.stopPropagation()'>
+                                  Start, Stop or Move Service
+                                </button>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10'>
+                                <button type='button' class='btn btn-default btn-alt btn-credit-card' ng-click='$event.stopPropagation()'>
+                                  View &amp; Pay Bills
+                                </button>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10'>
+                                <button type='button' class='btn btn-default btn-alt btn-credit-card' ng-click='$event.stopPropagation()'>
+                                  Save Energy &amp; Money
+                                </button>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <button type='button' class='btn btn-default btn-alt btn-credit-card' ng-click='$event.stopPropagation()'>
+                                  Resource Center
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='dropdown-custom-shadow'>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class='dropdown' dropdown>
+                  <a ng-href='' class='dropdown-toggle' dropdown-toggle>
+                    Business <i class='glyphicon glyphicon-chevron-down'></i>
+                  </a>
+                  <ul class='dropdown-menu dropdown-menu-business' role='menu'>
+                    <div class='dropdown-custom relative'>
+                      <div class='container'>
+                        <div class='row'>
+                          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-9'>
+                            <h2 class='small-header orange-text uppercase'>
+                              Business Services
+                            </h2>
+                          </div>
+                        </div>
+                        <div class='row'>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  Bills &amp; Payments
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Make an Online Payment</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Automatic Payments</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Go Paperless</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>My Account FAQs</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-6 col-md-6 col-sm-6 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  Industrial &amp; Commercial Services
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-6 col-md-6 col-sm-6 col-xs-9'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Industrial Services</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Commercial Services</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>For Builders &amp; Contractors</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Food Services</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Federal Customers</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Transportation Services</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class='col-lg-6 col-md-6 col-sm-6 col-xs-9'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/rebates-and-promotions") }}'>Rebates and Promotions</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Suppplier Diversity</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Natural Gas Vehicles</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Rates and Regulations</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' class='underline' ng-click='$event.stopPropagation()'>See All</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10'>
+                                <button type='button' class='btn btn-default btn-alt btn-credit-card' ng-click='$event.stopPropagation()'>
+                                  Start, Stop or Move Service
+                                </button>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10'>
+                                <button type='button' class='btn btn-default btn-alt btn-credit-card' ng-click='$event.stopPropagation()'>
+                                  View &amp; Pay Bills
+                                </button>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-10'>
+                                <button type='button' class='btn btn-default btn-alt btn-credit-card' ng-click='$event.stopPropagation()'>
+                                  Save Energy &amp; Money
+                                </button>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <button type='button' class='btn btn-default btn-alt btn-credit-card' ng-click='$event.stopPropagation()'>
+                                  Supplier Application
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='dropdown-custom-shadow'>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class='dropdown' dropdown>
+                  <a ng-href='' class='dropdown-toggle' dropdown-toggle>
+                    Community <i class='glyphicon glyphicon-chevron-down'></i>
+                  </a>
+                  <ul class='dropdown-menu dropdown-menu-community' role='menu'>
+                    <div class='dropdown-custom relative'>
+                      <div class='container'>
+                        <div class='row'>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  Community
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Our Commitment to the Environment</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Community Involvement</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Charitable Giving</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Community Events</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Construction Projects</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-3 col-md-3 col-sm-3 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  &nbsp;
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-20'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Energy Share</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='' ng-click='$event.stopPropagation()'>Supplier Diversity</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top-20 margin-bottom-20'>
+                                <p>Follow Us</p>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='nav-social clearfix'>
+                                  <li>
+                                    <a ng-href='' title='Facebook' ng-click='$event.stopPropagation()'>
+                                      <img src='images/shared/facebook_footer.png' alt='Facebook'>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='Twitter' ng-click='$event.stopPropagation()'>
+                                      <img src='images/shared/twitter_footer.png' alt='Twitter'>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='LinkedIn' ng-click='$event.stopPropagation()'>
+                                      <img src='images/shared/linkedin_footer.png' alt='LinkedIn'>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-6 col-md-6 col-sm-6 col-xs-6 padding-top-20'>
+                            <div class='row'>
+                              <div class='temp-nav-item'>
+                                <p>Lorem Ipsum...</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='dropdown-custom-shadow'>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class='dropdown' dropdown>
+                  <a ng-href='' class='dropdown-toggle' dropdown-toggle>
+                    Safety <i class='glyphicon glyphicon-chevron-down'></i>
+                  </a>
+                  <ul class='dropdown-menu dropdown-menu-safety' role='menu'>
+                    <div class='dropdown-custom relative'>
+                      <div class='container'>
+                        <div class='row'>
+                          <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                            <h2 class='small-header orange-text uppercase'>
+                              <a ng-href='{{ BASE_URL("/safety") }}' title='Residential Services' class='orange-text no-padding'>
+                                Safety
+                              </a>
+                            </h2>
+                          </div>
+                        </div>
+                        <div class='row'>
+                          <div class='col-lg-4 col-md-4 col-sm-4 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>
+                                  <a ng-href='{{ BASE_URL("/safety") }}' title='Home &amp; Business' class='no-padding orange-text'>
+                                    Home &amp; Business
+                                  </a>
+                                </h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/safety#safety-awareness") }}' title='Leak Recognition &amp; Responses'>Leak Recognition &amp; Responses</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/safety#safety-carbon-monoxide") }}' title='Carbon Monoxide Awareness'>Carbon Monoxide Awareness</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/safety#appliance-safety") }}' title='Appliance Safety'>Appliance Safety</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/safety#safety-excess-flow-valves") }}' title='Excess Flow Valves'>Excess Flow Valves</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/safety#safety-earthquakes") }}' title='Earthquake &amp; Seismic Valves'>Earthquake &amp; Seismic Valves</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-4 col-md-4 col-sm-4 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>Excavator</h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/safety#safety-call-811") }}' title='Call 811 Before You Dig'>Call 811 Before You Dig</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/safety#safety-customer-buried-piping") }}' title='Customer Buried Piping'>Customer Buried Piping</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='{{ BASE_URL("/safety#safety-evacuation") }}' title='Safe Excavation Steps'>Safe Excavation Steps</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <h2 class='small-header orange-text uppercase'>First Responders</h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='' title='First Responders Safety Information' ng-click='$event.preventDefault();'>First Responders Safety Information</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class='col-lg-4 col-md-4 col-sm-4 col-xs-9'>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-9'>
+                                <h2 class='small-header orange-text uppercase'>Pipeline</h2>
+                              </div>
+                            </div>
+                            <div class='row'>
+                              <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                <ul class='nav-links-large'>
+                                  <li>
+                                    <a ng-href='' title='Pipeline Locations' ng-click='$event.preventDefault();'>Pipeline Locations</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='Customer Buried Piping' ng-click='$event.preventDefault();'>Transmission Integrity Management Program</a>
+                                  </li>
+                                  <li>
+                                    <a ng-href='' title='Safe Excavation Steps' ng-click='$event.preventDefault();'>Rights of Way Information</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='dropdown-custom-shadow'>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
