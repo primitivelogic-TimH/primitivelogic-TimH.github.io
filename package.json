@@ -1,0 +1,15 @@
+{
+  "name": "untitled-project",
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-notify": "^0.4.1",
+    "gulp": "*",
+    "gulp-add-src": "^0.2.0",
+    "gulp-concat": "*",
+    "livereload": "*"
+  },
+  "dependencies": {
+    "gulp-uglifycss": "^1.0.4"
+  }
+}
