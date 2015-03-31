@@ -178,10 +178,8 @@ img.emblem {
 
 /* _______________________ Follow Us _______________________ */
 a.microicon {
-  width: 24px;
   height: 24px;
-  margin: 0 2px;
-  background-color: rgba(255, 255, 0, 0.3); }
+  margin: 0 2px; }
   a.microicon img {
     width: auto;
     height: 24px; }
