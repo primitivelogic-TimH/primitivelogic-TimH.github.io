@@ -12,9 +12,15 @@
   gulp.src('./src/*.html')
     .pipe(gulp.dest('./'));
   });
+
+gulp.task('sass:build', function () {
+    gulp.src('./src/scss/*.scss')
+        .pipe(sass({sourceComments: 'normal'}))
+        .pipe(gulp.dest('./css'));
+});  
   gulp.task('css:prod', function () {
     gulp.src(['./src/css/*.css','./src/scss/*.scss'])
-        //.pipe(sass())
+        .pipe(sass({sourceComments: 'normal'}))
         .pipe(concat("global.css"))
         .pipe(uglifycss())
         .pipe(gulp.dest('./css'));
