@@ -5,19 +5,17 @@
   var uglify = require('gulp-uglify');
   var uglifycss = require('gulp-uglifycss');
   var concat = require("gulp-concat");
+  
   gulp.task("default", [
   'sass',
   'js:prod',
   'html:prod',
   'css:prod'
 ]);
-
-
   gulp.task('html:prod', function () {
   gulp.src('./src/*.html')
     .pipe(gulp.dest('./'));
   });
-
 gulp.task('sass', function () {
     gulp.src('./src/scss/theme.scss')
         .pipe(plumber())
@@ -36,13 +34,11 @@ gulp.task('sass', function () {
             .pipe(uglify({preserveComments : false,mangle : false}))
             .pipe(gulp.dest('js'));
     });
-
   gulp.task('watch:production', function() {
   gulp.watch('./src/scss/*.scss', ['css:prod']);
   gulp.watch('./src/js/*.js', ['js:prod']);
   gulp.watch('./src/*.html', ['html:prod']);
   });
-
   gulp.task('build', function() {
   gulp.start('sass:build', 'js:prod', 'html:prod', 'css:prod');
   });

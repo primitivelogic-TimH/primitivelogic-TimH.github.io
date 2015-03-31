@@ -177,13 +177,14 @@ img.emblem {
   background: #232324; }
 
 /* _______________________ Follow Us _______________________ */
-.microicon {
+a.microicon {
   width: 24px;
   height: 24px;
-  margin: 0 2px; }
-  .microicon img {
-    width: 100%;
-    height: auto; }
+  margin: 0 2px;
+  background-color: rgba(255, 255, 0, 0.3); }
+  a.microicon img {
+    width: auto;
+    height: 24px; }
 
 .follow_us {
   margin: 0;
