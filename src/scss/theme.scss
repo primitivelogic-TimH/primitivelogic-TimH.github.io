@@ -604,7 +604,7 @@ input[type="color"]:focus {
 #copyright a {
 	padding:0 5px;
 }
-#copyright a:hover {
+#copyright a:hover:not(.microicon) {
 	background:$primary-color;
 	color:#000;
 }

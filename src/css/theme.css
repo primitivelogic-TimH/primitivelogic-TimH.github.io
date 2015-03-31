@@ -566,7 +566,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 #copyright a {
   padding: 0 5px; }
 
-#copyright a:hover {
+#copyright a:hover:not(.microicon) {
   background: #fffc00;
   color: #000; }
 
