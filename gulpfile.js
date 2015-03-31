@@ -13,7 +13,7 @@
     .pipe(gulp.dest('./'));
   });
   gulp.task('css:prod', function () {
-    gulp.src(['./src/css/*.css','./src/sass/*.scss'])
+    gulp.src(['./src/css/*.css','./src/scss/*.scss'])
         //.pipe(sass())
         .pipe(concat("global.css"))
         .pipe(uglifycss())
