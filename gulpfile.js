@@ -1,11 +1,16 @@
   // Untitled Project - created with Gulp Fiction
   var gulp = require("gulp");
+  var plumber = require('gulp-plumber');
   var sass = require('gulp-sass');
   var uglify = require('gulp-uglify');
   var uglifycss = require('gulp-uglifycss');
   var concat = require("gulp-concat");
-  gulp.task("default", [], function () {
-  });
+  gulp.task("default", [
+  'sass',
+  'js:prod',
+  'html:prod',
+  'css:prod'
+]);
 
 
   gulp.task('html:prod', function () {
@@ -13,14 +18,14 @@
     .pipe(gulp.dest('./'));
   });
 
-gulp.task('sass:build', function () {
-    gulp.src('./src/scss/*.scss')
-        .pipe(sass({sourceComments: 'normal'}))
-        .pipe(gulp.dest('./css'));
-});  
+gulp.task('sass', function () {
+    gulp.src('./src/scss/theme.scss')
+        .pipe(plumber())
+		.pipe(sass())
+        .pipe(gulp.dest('src/css'));
+});
   gulp.task('css:prod', function () {
-    gulp.src(['./src/css/*.css','./src/scss/*.scss'])
-        .pipe(sass({sourceComments: 'normal'}))
+    gulp.src('./src/**/*.css')
         .pipe(concat("global.css"))
         .pipe(uglifycss())
         .pipe(gulp.dest('./css'));
@@ -39,5 +44,5 @@ gulp.task('sass:build', function () {
   });
 
   gulp.task('build', function() {
-  gulp.start('css:prod', 'js:prod', 'html:prod');
+  gulp.start('sass:build', 'js:prod', 'html:prod', 'css:prod');
   });
