@@ -131,6 +131,7 @@ h3.title {
 	line-height:56px;
 	font-size:33px;
 	color:#fffc00;
+	text-shadow:0 0 2px #333;
 }
 
 img.emblem {
@@ -146,6 +147,7 @@ img.emblem {
 	font-weight:700;
 	color:#fffc00;
 	border:3px solid #fffc00;
+	text-shadow:0 0 2px #333;	
 }
 .vcard_link:hover {
 	background:#fffc00;
@@ -171,6 +173,10 @@ img.emblem {
 	font-size:100px;
 	color:#d5d200 !important;
 	background:#fffc00 !important;
+	text-shadow:0 1px 1px #666;
+}
+.title_block h2.title {
+	text-shadow:0 0 transparent;
 }
 .hidden {
 	padding:20px 20px 0;
@@ -342,19 +348,19 @@ p.skill-title {
 
 /* _________ //Skills _________ */
 
-.employmant_block {
+.employment_block {
 }
-.employmant_item {
+.employment_item {
 	position:relative;
 	margin-left:241px;
 	padding:0 0 20px 20px;
 	border-left:1px solid #3e3e3e;
 }
-.employmant_content.last {padding-bottom:30px;
+.employment_content.last {padding-bottom:30px;
 }
-.employmant_item.last {padding:0 0 0 20px;
+.employment_item.last {padding:0 0 0 20px;
 }
-.employmant_item:before {
+.employment_item:before {
 	content:'';
 	position:absolute;
 	left:-7px;
@@ -364,12 +370,12 @@ p.skill-title {
 	border:3px solid #fffc00;
 	background:#232324;
 }
-.employmant_item p.title {
+.employment_item p.title {
 	margin-bottom:11px;
 	text-transform:uppercase;
 	color:#fffc00;
 }
-.employmant_txt {padding-right:60px;
+.employment_txt {padding-right:60px;
 }
 .emp_inf {
 	float:left;
@@ -586,6 +592,7 @@ input[type="color"]:focus {
 }
 #footer a {
 	color:#fffc00;
+	text-shadow:0 0 2px #333;
 }
 #copyright {
 	padding:1px 11px 1px 16px;
@@ -768,7 +775,7 @@ input[type="color"]:focus {
 	.skill-bar {width:230px;}
 	
 	.emp_inf {width:120px;}
-	.employmant_item {margin-left:140px;}
+	.employment_item {margin-left:140px;}
 	
 /* _________ //Resume _________ */
 
@@ -824,8 +831,8 @@ input[type="color"]:focus {
 	
 	.emp_inf {width:65px;line-height:13px;}
 	.emp_inf p {line-height:20px;}
-	.employmant_item {margin-left:85px;}
-	.employmant_txt {padding-right:0;}
+	.employment_item {margin-left:85px;}
+	.employment_txt {padding-right:0;}
 /* _________ //Resume _________ */
 
 /* __________ Portfolio _________ */
@@ -848,25 +855,3 @@ input[type="color"]:focus {
 @media (max-width: 400px) {
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
