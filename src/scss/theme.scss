@@ -16,7 +16,7 @@ a {
 }
 a:hover, a:focus {
 	text-decoration:none;
-	color:#fffc00;
+	color:$main-color;
 }
 ::selection {
 	background: #505050;
@@ -30,11 +30,11 @@ body {
 	overflow-x:hidden;
 	margin: 0;
 	padding:0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $base-font;
 	font-weight:400;
 	font-size: 13px;
 	line-height: 20px;
-	color: #6c6c6c;
+	color: $content-color;
 	background:#5f949f;
 }
 .fleft {float:left;
@@ -119,7 +119,7 @@ h3.title {
 	font-weight:400;
 	line-height:20px;
 	font-size:16px;
-	color:#fffc00;
+	color:$main-color;
 }
 
 .logo h1 {
@@ -130,7 +130,7 @@ h3.title {
 	font-weight:600;
 	line-height:56px;
 	font-size:33px;
-	color:#fffc00;
+	color:$main-color;
 	text-shadow:0 0 2px #333;
 }
 
@@ -145,12 +145,12 @@ img.emblem {
 	padding:4px 8px;
 	text-transform:uppercase;
 	font-weight:700;
-	color:#fffc00;
-	border:3px solid #fffc00;
+	color:$main-color;
+	border:3px solid $main-color;
 	text-shadow:0 0 2px #333;	
 }
 .vcard_link:hover {
-	background:#fffc00;
+	background:$main-color;
 	color:#000;
 }
 
@@ -172,7 +172,7 @@ img.emblem {
 	line-height:74px;
 	font-size:100px;
 	color:#d5d200 !important;
-	background:#fffc00 !important;
+	background:$main-color !important;
 	text-shadow:0 1px 1px #666;
 }
 .title_block h2.title {
@@ -184,7 +184,9 @@ img.emblem {
 }
 
 /* _______________________ Follow Us _______________________ */
-
+.microicon {width:24px;height:24px margin:0 2px;
+img{width:100%;height:auto}
+}
 .follow_us {
 	margin:0;
 	padding:0;
@@ -203,12 +205,12 @@ img.emblem {
 	background-repeat:no-repeat;
 	height:24px;
 	width:24px;
-	border:3px solid #fffc00;
+	border:3px solid $main-color;
 	transition: background-color 0.3s ease-in-out;
 	-webkit-transition: background-color 0.3s ease-in-out;
 }
 .follow_us a:hover {
-	background-color:#fffc00;
+	background-color:$main-color;
 }
 .follow_us a.soc1 {background-position:0 0;
 }
@@ -278,7 +280,7 @@ img.emblem {
 	padding-right:3px;
 	text-transform:uppercase;
 	line-height:17px;
-	color:#fffc00;
+	color:$main-color;
 }
 .author_testim_descr {
 	font-size:12px;
@@ -300,7 +302,7 @@ ul.author_inf li span {
 	width:111px;
 	background:#3a3a3a;
 	text-transform:uppercase;
-	color:#fffc00;
+	color:$main-color;
 }
 
 /* _________ //Author inf _________ */
@@ -336,7 +338,7 @@ ul.author_inf li span {
 	position: absolute;
 	top:0;
 	left: 0;
-	background: #fffc00;
+	background: $main-color;
 }
 p.skill-title {
 	float:left;
@@ -367,13 +369,13 @@ p.skill-title {
 	top:3px;
 	width:8px;
 	height:8px;
-	border:3px solid #fffc00;
+	border:3px solid $main-color;
 	background:#232324;
 }
 .employment_item p.title {
 	margin-bottom:11px;
 	text-transform:uppercase;
-	color:#fffc00;
+	color:$main-color;
 }
 .employment_txt {padding-right:60px;
 }
@@ -406,12 +408,12 @@ p.skill-title {
 	display:inline-block;
 	padding:4px 8px 3px;
 	text-transform:uppercase;
-	color:#fffc00;
+	color:$main-color;
 	border:3px solid #232324;
 }
 #filter li a:hover,
 #filter li a.selected {
-	border:3px solid #fffc00;
+	border:3px solid $main-color;
 }
 
 .projects .element {
@@ -435,7 +437,7 @@ p.skill-title {
 	height:100%;
 	opacity:0.05;
 	filter: alpha(opacity=5);
-	background:#fffc00;
+	background:$main-color;
 	transition: all 0.9s ease-in-out;
 	-webkit-transition: all 0.9s ease-in-out;
 }
@@ -458,7 +460,7 @@ p.skill-title {
 }
 .projects .element:hover .proj_desc {
 	color:#494949;
-	border-bottom:1px solid #fffc00;
+	border-bottom:1px solid $main-color;
 	transform: translateY(-136px);
 	-ms-transform: translateY(-136px);
 	-webkit-transform: translateY(-136px);
@@ -482,7 +484,7 @@ p.skill-title {
 }
 .projects .element:hover .proj_desc a {
 	margin-top:66px;
-	color:#fffc00;
+	color:$main-color;
 }
 
 /* ________________________ //Portfolio ________________________ */
@@ -497,7 +499,7 @@ p.skill-title {
 	line-height:15px;
 	color:#989898;
 }
-.contact_inf a:hover {color:#fffc00;
+.contact_inf a:hover {color:$main-color;
 }
 .contact_inf p {
 	margin-bottom:22px;
@@ -511,7 +513,7 @@ input[type="text"] {
 	padding: 8px 13px 9px;
 	width: 44.5%;
 	text-transform:none;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $base-font;
 	font-weight:400;
 	font-size: 12px;
 	color: #696969;
@@ -554,22 +556,22 @@ input[type="color"]:focus {
 	cursor:pointer;
 	padding:0 15px;
 	background: none;
-	border: 3px solid #fffc00;
+	border: 3px solid $main-color;
 	border-radius: 0;
 	box-shadow: 0;
 	text-shadow:none;
 	text-decoration:none;
 	text-transform:uppercase;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $base-font;
 	font-weight:400;
 	line-height:20px;
 	font-size:13px;
-	color:#fffc00;
+	color:$main-color;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
 .contact_btn:hover {
-	background:#fffc00;
+	background:$main-color;
 	color:#000;
 }
 
@@ -588,22 +590,22 @@ input[type="color"]:focus {
 	font-weight:700;
 	line-height:20px;
 	font-size:12px;
-	color:#fffc00;
+	color:$main-color;
 }
 #footer a {
-	color:#fffc00;
+	color:$main-color;
 	text-shadow:0 0 2px #333;
 }
 #copyright {
 	padding:1px 11px 1px 16px;
 	text-transform:uppercase;
-	border:4px solid #fffc00;
+	border:4px solid $main-color;
 }
 #copyright a {
 	padding:0 5px;
 }
 #copyright a:hover {
-	background:#fffc00;
+	background:$main-color;
 	color:#000;
 }
 
