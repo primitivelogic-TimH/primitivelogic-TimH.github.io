@@ -1,16 +1,15 @@
   // Untitled Project - created with Gulp Fiction
   var gulp = require("gulp");
   var plumber = require('gulp-plumber');
+  var inject = require('gulp-inject');
   var sass = require('gulp-sass');
   var uglify = require('gulp-uglify');
   var uglifycss = require('gulp-uglifycss');
   var concat = require("gulp-concat");
+  var htmlclean = require('gulp-htmlclean');
+  var gulpif = require('gulp-if');
   
   gulp.task("default", [
-  'sass',
-  'js:prod',
-  'html:prod',
-  'css:prod'
 ]);
   gulp.task('html:prod', function () {
   gulp.src('./src/*.html')
@@ -42,3 +41,21 @@ gulp.task('sass', function () {
   gulp.task('build', function() {
   gulp.start('sass:build', 'js:prod', 'html:prod', 'css:prod');
   });
+  
+  
+gulp.task('needle',function(){
+  gulp.src('./src/template.html')
+    .pipe(inject(gulp.src(['./src/metard.html']), {starttag: '<!-- inject:head:{{ext}} -->',transform: function (filePath, file) {
+      // return file contents as string 
+      return file.contents.toString('utf8')
+      }
+      }))
+    .pipe(inject(gulp.src(['./src/footer.html']), {starttag: '<!-- inject:footer:{{ext}} -->',transform: function (filePath, file) {
+      // return file contents as string 
+      return file.contents.toString('utf8')
+      }
+      }))
+    .pipe(htmlclean())
+    .pipe(gulp.dest('./'));
+
+      });
