@@ -2,16 +2,22 @@
   "name": "untitled-project",
   "version": "0.0.0",
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.0.4",
     "grunt-notify": "^0.4.1",
     "gulp": "*",
-    "gulp-add-src": "^0.2.0",
+    "gulp-add-src": "^1.0.0",
     "gulp-concat": "*",
     "gulp-htmlclean": "^2.6.3",
-    "gulp-if": "^1.2.5",
+    "gulp-if": "^2.0.2",
     "gulp-inject": "^1.2.0",
     "gulp-plumber": "^1.0.0",
-    "livereload": "*",
-    "gulp-uglifycss": "^1.0.4"
+    "gulp-uglifycss": "^1.0.4",
+    "livereload": "*"
+  },
+  "dependencies": {
+    "braces": "^3.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "tar": "^4.4.8"
   }
 }

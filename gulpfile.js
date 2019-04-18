@@ -9,8 +9,7 @@
   var htmlclean = require('gulp-htmlclean');
   var gulpif = require('gulp-if');
   
-  gulp.task("default", [
-]);
+
   gulp.task('html:prod', function () {
   gulp.src('./src/*.html')
     .pipe(gulp.dest('./'));

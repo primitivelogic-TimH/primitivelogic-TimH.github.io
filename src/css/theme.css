@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 a, input, select, textarea, div:focus {
   outline: none !important;
   -webkit-appearance: none;
@@ -29,7 +30,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
@@ -401,7 +402,8 @@ p.skill-title {
   color: #fffc00;
   border: 3px solid #232324; }
 
-#filter li a:hover, #filter li a.selected {
+#filter li a:hover,
+#filter li a.selected {
   border: 3px solid #fffc00; }
 
 .projects .element {
@@ -492,12 +494,13 @@ p.skill-title {
   line-height: 15px;
   color: #989898; }
 
-textarea, input[type="text"] {
+textarea,
+input[type="text"] {
   margin: 0 0 10px 0;
   padding: 8px 13px 9px;
   width: 44.5%;
   text-transform: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: #696969;
@@ -516,7 +519,21 @@ textarea {
   overflow: hidden;
   resize: none; }
 
-textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
   outline: 0;
   box-shadow: none;
   border: 1px solid #3a3a3a; }
@@ -532,7 +549,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   text-shadow: none;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 20px;
   font-size: 13px;
@@ -579,7 +596,8 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   z-index: 1; }
 
 /**** Isotope CSS3 transitions ****/
-.isotope, .isotope .isotope-item {
+.isotope,
+.isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
   transition-duration: 0.8s; }
@@ -595,7 +613,9 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   transition-property: transform, opacity; }
 
 /**** disabling Isotope CSS3 transitions ****/
-.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
   -webkit-transition-duration: 0s;
   -moz-transition-duration: 0s;
   transition-duration: 0s; }
@@ -864,4 +884,3 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   .fright.follow_us {
     float: none;
     margin-top: 13px; } }
-
